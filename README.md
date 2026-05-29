@@ -24,7 +24,7 @@ Using the built-in package manager:
 
 ```lua
   vim.pack.add({
-    { src = "https://github.com/zitrocode/sbb.nvim", name = 'sbb' }
+    { src = "https://github.com/sbb2425/sbb.nvim", name = 'sbb' }
   })
 ```
 
@@ -33,7 +33,7 @@ For more details see: `:help vim.pack`
 ### Lazy.nvim
 
 ```lua
-  { "zitrocode/sbb.nvim", lazy = false, priority = 1000, opts = {} }
+  { "sbb2425/sbb.nvim", lazy = false, priority = 1000, opts = {} }
 ```
 
 For more details see: <https://github.com/folke/lazy.nvim>
@@ -41,7 +41,7 @@ For more details see: <https://github.com/folke/lazy.nvim>
 ### Packer.nvim
 
 ```lua
-  use { "zitrocode/sbb.nvim", as="sbb" }
+  use { "sbb2425/sbb.nvim", as="sbb" }
 ```
 
 For more details see: <https://github.com/wbthomason/packer.nvim>
@@ -127,7 +127,7 @@ If a plugin you use is not supported yet, you can:
 - Open an issue
 - Submit a pull request with highlight definitions
 
-For more details see: <https://github.com/zitrocode/sbb.nvim>
+For more details see: <https://github.com/sbb2425/sbb.nvim>
 
 ## License
 
