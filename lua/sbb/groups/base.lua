@@ -45,7 +45,7 @@ function M.get(opts, c)
     StatusLine = { fg = c.ui.fg.default, bg = c.ui.bg.default },
     StatusLineNC = { fg = c.ui.fg.muted, bg = c.ui.bg.default },
 
-    TabLine = { fg = c.accent.gray, bg = c.ui.bg.float },
+    TabLine = { fg = c.accent.gray.default, bg = c.ui.bg.float },
     TabLineFill = { fg = c.ui.fg.default, bg = c.ui.bg.default },
     -- TabLineSel = { fg = c.ui.fg.inverse, bg = c.accent.gray.dim },
     TabLineSel = { fg = c.accent.gray.soft, bg = c.accent.gray.dim },
