@@ -30,13 +30,16 @@ function M.setup(opts)
     },
 
     border = {
-      default = util.lighten(v.bg, 0.18),
+      -- default = util.lighten(v.bg, 0.18),
+      default = v.gray,
       subtle = util.lighten(v.bg, 0.12),
       strong = util.lighten(v.bg, 0.28),
     },
 
-    cursorline = util.lighten(v.bg, 0.04),
-    visual = util.blend(v.fg, v.bg, 0.12),
+    -- cursorline = util.lighten(v.bg, 0.04),
+    cursorline = v.gray,
+    -- visual = util.blend(v.fg, v.bg, 0.12),
+    visual = v.gray1
   }
 
   colors.accent = {
