@@ -24,7 +24,7 @@ Using the built-in package manager:
 
 ```lua
   vim.pack.add({
-    { src = "https://github.com/zitrocode/carvion.nvim", name = 'carvion' }
+    { src = "https://github.com/zitrocode/sbb.nvim", name = 'sbb' }
   })
 ```
 
@@ -33,7 +33,7 @@ For more details see: `:help vim.pack`
 ### Lazy.nvim
 
 ```lua
-  { "zitrocode/carvion.nvim", lazy = false, priority = 1000, opts = {} }
+  { "zitrocode/sbb.nvim", lazy = false, priority = 1000, opts = {} }
 ```
 
 For more details see: <https://github.com/folke/lazy.nvim>
@@ -41,7 +41,7 @@ For more details see: <https://github.com/folke/lazy.nvim>
 ### Packer.nvim
 
 ```lua
-  use { "zitrocode/carvion.nvim", as="carvion" }
+  use { "zitrocode/sbb.nvim", as="sbb" }
 ```
 
 For more details see: <https://github.com/wbthomason/packer.nvim>
@@ -51,7 +51,7 @@ For more details see: <https://github.com/wbthomason/packer.nvim>
 Enabled the colorscheme:
 
 ```lua
-  vim.cmd.colorscheme('carvion')
+  vim.cmd.colorscheme('sbb')
 ```
 
 ## Configuration
@@ -59,13 +59,13 @@ Enabled the colorscheme:
 Carvion.nvim provides optional configuration using:
 
 ```lua
-  require('carvion').setup({})
+  require('sbb').setup({})
 ```
 
 ### Default configuration:
 
 ```lua
-  require("carvion").setup({
+  require("sbb").setup({
     transparent = false,
     styles = {
       comments = { italic = true },
@@ -85,7 +85,7 @@ Disable background colors.
 Example:
 
 ```lua
-  require('carvion').setup({
+  require('sbb').setup({
     transparent = true
   })
 ```
@@ -98,7 +98,7 @@ Each value accepts any valid highlight attribute supported by |nvim_set_hl|
 Example:
 
 ```lua
-  require('carvion').setup({
+  require('sbb').setup({
     styles = {
       comments = { italic = true },
       functions = { italic = true },
@@ -127,7 +127,7 @@ If a plugin you use is not supported yet, you can:
 - Open an issue
 - Submit a pull request with highlight definitions
 
-For more details see: <https://github.com/zitrocode/carvion.nvim>
+For more details see: <https://github.com/zitrocode/sbb.nvim>
 
 ## License
 
