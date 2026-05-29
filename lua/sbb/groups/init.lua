@@ -1,12 +1,12 @@
-local ns = require("carvion.namespaces")
-local util = require("carvion.util")
+local ns = require("sbb.namespaces")
+local util = require("sbb.util")
 
 local M = {}
 
 -- Loads highlight groups from all discovered namespaces.
 -- Scans directories, requires modules, and merges their highlights
 --
----@type carvion.HighlightsFn
+---@type sbb.HighlightsFn
 function M.setup(opts, colors)
   local groups = {}
   local namespaces = ns.scan("groups")
@@ -18,7 +18,7 @@ function M.setup(opts, colors)
       local modules = ns.list(path)
 
       for _, name in ipairs(modules) do
-        local modname = "carvion." .. namespace .. "." .. name
+        local modname = "sbb." .. namespace .. "." .. name
         local ok, mod = pcall(require, modname)
 
         if ok and type(mod.get) == "function" then
@@ -30,7 +30,7 @@ function M.setup(opts, colors)
             end
           end
         else
-          vim.notify("carvion.nvim: Failed to load " .. modname, vim.log.levels.WARN)
+          vim.notify("sbb.nvim: Failed to load " .. modname, vim.log.levels.WARN)
         end
       end
     end

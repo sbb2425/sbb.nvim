@@ -1,25 +1,25 @@
-*carvion.nvim* *carvion*                                     carvion.nvim docs
+*sbb.nvim* *sbb*                                     sbb.nvim docs
 
 Author: Ortiz Oscar <hello@ortizoscar.com>
-Source: https://github.com/zitrocode/carvion.nvim
+Source: https://github.com/zitrocode/sbb.nvim
 ==============================================================================
-Table of Contents                             *carvion.nvim-table-of-contents*
+Table of Contents                             *sbb.nvim-table-of-contents*
 
-1. Introduction                                    |carvion.nvim-introduction|
-2. Requirements                                    |carvion.nvim-requirements|
-3. Installation                                    |carvion.nvim-installation|
-  - vim.pack                                       |carvion.nvim-install-pack|
-  - Lazy.nvim                                      |carvion.nvim-install-lazy|
-  - Packer.nvim                                  |carvion.nvim-install-packer|
-4. Usage                                                  |carvion.nvim-usage|
-5. Configuration                                  |carvion.nvim-configuration|
-  - Transparent                                     |carvion.nvim-transparent|
-  - Styles                                               |carvion.nvim-styles|
-6. Supported plugins                          |carvion.nvim-supported-plugins|
-7. License                                              |carvion.nvim-license|
+1. Introduction                                    |sbb.nvim-introduction|
+2. Requirements                                    |sbb.nvim-requirements|
+3. Installation                                    |sbb.nvim-installation|
+  - vim.pack                                       |sbb.nvim-install-pack|
+  - Lazy.nvim                                      |sbb.nvim-install-lazy|
+  - Packer.nvim                                  |sbb.nvim-install-packer|
+4. Usage                                                  |sbb.nvim-usage|
+5. Configuration                                  |sbb.nvim-configuration|
+  - Transparent                                     |sbb.nvim-transparent|
+  - Styles                                               |sbb.nvim-styles|
+6. Supported plugins                          |sbb.nvim-supported-plugins|
+7. License                                              |sbb.nvim-license|
 
 ==============================================================================
-INTRODUCTION                                       *carvion.nvim-requirements*
+INTRODUCTION                                       *sbb.nvim-requirements*
 
 Carvion.nvim is a modular colorscheme for Neovim focused on clarity
 consistency, and extensibility.
@@ -27,60 +27,60 @@ consistency, and extensibility.
 For general help about colorscheme see: |colorscheme|
 
 ==============================================================================
-REQUIREMENTS                                       *carvion.nvim-introduction*
+REQUIREMENTS                                       *sbb.nvim-introduction*
 
 Minimum requirements:
   - Neovim >= 0.9.0
 
 ==============================================================================
-INSTALLATION                                       *carvion.nvim-installation*
+INSTALLATION                                       *sbb.nvim-installation*
 
 Install using your preferred plugin manager.
 
-vim.pack:                                               *carvion-install-pack*
+vim.pack:                                               *sbb-install-pack*
 
 NOTE: This method is only available in neovim >= 0.12.0
 
 Using the built-in package manager:
 >lua
   vim.pack.add({
-    { src = "https://github.com/zitrocode/carvion.nvim", name = 'carvion' }
+    { src = "https://github.com/zitrocode/sbb.nvim", name = 'sbb' }
   })
 <
 For more details see: |vim.pack|
 
-Lazy.nvim                                               *carvion-install-lazy*
+Lazy.nvim                                               *sbb-install-lazy*
 
 >lua
-  { "zitrocode/carvion.nvim", lazy = false, priority = 1000, opts = {} }
+  { "zitrocode/sbb.nvim", lazy = false, priority = 1000, opts = {} }
 <
 For more details see: <https://github.com/folke/lazy.nvim>
 
-Packer.nvim                                           *carvion-install-packer*
+Packer.nvim                                           *sbb-install-packer*
 
 >lua
-  use { "zitrocode/carvion.nvim", as="carvion" }
+  use { "zitrocode/sbb.nvim", as="sbb" }
 <
 For more details see: <https://github.com/wbthomason/packer.nvim>
 
 ==============================================================================
-USAGE                                                     *carvion.nvim-usage*
+USAGE                                                     *sbb.nvim-usage*
 
 Enabled the colorscheme:
 >lua
-  vim.cmd.colorscheme('carvion')
+  vim.cmd.colorscheme('sbb')
 <
 ==============================================================================
-CONFIGURATION                                     *carvion.nvim-configuration*
+CONFIGURATION                                     *sbb.nvim-configuration*
 
 Carvion.nvim provides optional configuration using:
 >lua
-  require('carvion').setup({})
+  require('sbb').setup({})
 <
 
 Default configuration:
 >lua
-  require("carvion").setup({
+  require("sbb").setup({
     transparent = false,
     styles = {
       comments = { italic = true },
@@ -93,25 +93,25 @@ Default configuration:
   })
 <
 
-TRANSPARENT                                         *carvion.nvim-transparent*
+TRANSPARENT                                         *sbb.nvim-transparent*
 
 Disable background colors.
 
 Example:
 >lua
-  require('carvion').setup({
+  require('sbb').setup({
     transparent = true
   })
 <
 
-STYLES                                                   *carvion.nvim-styles*
+STYLES                                                   *sbb.nvim-styles*
 
 Apply highlights styles to specific syntax group.
 Each value accepts any valid highlight attribute supported by |nvim_set_hl|
 
 Example:
 >lua
-  require('carvion').setup({
+  require('sbb').setup({
     styles = {
       comments = { italic = true },
       functions = { italic = true },
@@ -123,7 +123,7 @@ Available style groups `comments`, `keywords`, `functions`, `variables`,
 `strings` and `types`.
 
 ==============================================================================
-SUPPORTED PLUGINS                             *carvion.nvim-supported-plugins*
+SUPPORTED PLUGINS                             *sbb.nvim-supported-plugins*
 
 Carvion.nvim includes highlight support for selected plugins.
 
@@ -139,10 +139,10 @@ If a plugin you use is not supported yet, you can:
   - Open an issue
   - Submit a pull request with highlight definitions
 
-For more details see: <https://github.com/zitrocode/carvion.nvim>
+For more details see: <https://github.com/zitrocode/sbb.nvim>
 
 ==============================================================================
-LICENSE  *carvion.nvim-license*
+LICENSE  *sbb.nvim-license*
 
 Carvion.nvim is distributed under the MIT License.
 For full licence text see: `LICENSE`

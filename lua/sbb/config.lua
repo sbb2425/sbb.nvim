@@ -1,6 +1,6 @@
 local M = {}
 
----@class carvion.Config
+---@class sbb.Config
 ---@field transparent boolean
 ---@field styles carvion.Styles
 M.defaults = {
@@ -10,10 +10,10 @@ M.defaults = {
     -- Value is any valid attr-list value for `:help nvim_set_hl`
     comments = { italic = true },
     keywords = {},
-    functions = {},
+    functions = { bold = true },
     variables = {},
     strings = {},
-    types = {},
+    types = { italic = true },
   },
 }
 

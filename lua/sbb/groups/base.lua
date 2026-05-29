@@ -1,6 +1,6 @@
 local M = {}
 
----@type carvion.HighlightsFn
+---@type sbb.HighlightsFn
 function M.get(opts, c)
   return {
     -- Core UI

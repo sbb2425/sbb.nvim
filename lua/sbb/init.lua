@@ -1,13 +1,13 @@
-local config = require("carvion.config")
+local config = require("sbb.config")
 
 local M = {}
 
----@param opts? carvion.Config
+---@param opts? sbb.Config
 function M.colorscheme(opts)
   opts = config.extend(opts)
 
-  local colors = require("carvion.colors").setup(opts)
-  local groups = require("carvion.groups").setup(opts, colors)
+  local colors = require("sbb.colors").setup(opts)
+  local groups = require("sbb.groups").setup(opts, colors)
 
   -- only needed to clear when not the default colorscheme
   if vim.g.colors_scheme then

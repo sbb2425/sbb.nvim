@@ -1,13 +1,13 @@
-local palette = require("carvion.colors.palette")
-local util = require("carvion.util")
+local palette = require("sbb.colors.palette")
+local util = require("sbb.util")
 
 local M = {}
 
 function M.setup(opts)
-  opts = require("carvion.config").extend(opts)
+  opts = require("sbb.config").extend(opts)
   local v = palette.dark
 
-  ---@class carvion.ColorScheme
+  ---@class sbb.ColorScheme
   local colors = {}
 
   colors.ui = {

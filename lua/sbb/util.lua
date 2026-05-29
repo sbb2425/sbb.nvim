@@ -67,8 +67,8 @@ end
 -- Resolve `style` fields into highlight attributes.
 -- Merges style value into the highlight and removes the 'style' key.
 --
----@param groups carvion.Highlights
----@return carvion.Highlights
+---@param groups sbb.Highlights
+---@return sbb.Highlights
 function M.resolve(groups)
   for _, hl in pairs(groups) do
     if type(hl.style) == "table" then
@@ -84,9 +84,9 @@ end
 -- Shallow merge of `src` into `dest`.
 -- Existings keys in `dest` are overwritten
 --
----@param dest carvion.Highlights
----@param src carvion.Highlights
----@return carvion.Highlights
+---@param dest sbb.Highlights
+---@param src sbb.Highlights
+---@return sbb.Highlights
 function M.merge(dest, src)
   for key, value in pairs(src) do
     dest[key] = value

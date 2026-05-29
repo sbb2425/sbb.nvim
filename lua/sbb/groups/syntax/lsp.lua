@@ -1,6 +1,6 @@
 local M = {}
 
----@type carvion.HighlightsFn
+---@type sbb.HighlightsFn
 function M.get(_, c)
   return {
     ["@lsp.type.class"] = { fg = c.syntax.identifiers },
