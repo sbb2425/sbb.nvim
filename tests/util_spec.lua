@@ -1,4 +1,4 @@
-local util = require("carvion.util")
+local util = require("sbb.util")
 
 describe("util.blend", function()
   it("should return the background color when alpha is 0", function()

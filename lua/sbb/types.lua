@@ -1,4 +1,4 @@
----@class carvion.Styles
+---@class sbb.Styles
 ---@field comments vim.api.keyset.highlight
 ---@field keywords vim.api.keyset.highlight
 ---@field functions vim.api.keyset.highlight
@@ -6,9 +6,9 @@
 ---@field strings vim.api.keyset.highlight
 ---@field types vim.api.keyset.highlight
 
----@class carvion.Highlight: vim.api.keyset.highlight
+---@class sbb.Highlight: vim.api.keyset.highlight
 ---@field style? vim.api.keyset.highlight
 
----@alias carvion.Highlights table<string,carvion.Highlight|string>
+---@alias sbb.Highlights table<string,sbb.Highlight|string>
 
----@alias carvion.HighlightsFn fun(opts: carvion.Config, colors: carvion.ColorScheme):carvion.Highlights
+---@alias sbb.HighlightsFn fun(opts: sbb.Config, colors: sbb.ColorScheme):sbb.Highlights

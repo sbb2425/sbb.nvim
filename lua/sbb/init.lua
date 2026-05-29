@@ -15,7 +15,7 @@ function M.colorscheme(opts)
   end
 
   vim.o.termguicolors = true
-  vim.g.colors_scheme = "carvion"
+  vim.g.colors_scheme = "sbb"
 
   for group, hl in pairs(groups) do
     if type(hl) == "string" then

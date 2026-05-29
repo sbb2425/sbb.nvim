@@ -1,7 +1,7 @@
-local palette = require("carvion.colors").setup()
-local carvion = {}
+local palette = require("sbb.colors").setup()
+local sbb = {}
 
-carvion.normal = {
+sbb.normal = {
   a = {
     fg = palette.ui.fg.inverse,
     bg = palette.accent.orange.default,
@@ -19,7 +19,7 @@ carvion.normal = {
   },
 }
 
-carvion.insert = {
+sbb.insert = {
   a = {
     fg = palette.ui.bg.default,
     bg = palette.accent.green.default,
@@ -32,7 +32,7 @@ carvion.insert = {
   },
 }
 
-carvion.visual = {
+sbb.visual = {
   a = {
     fg = palette.ui.bg.default,
     bg = palette.accent.neutral.default,
@@ -45,7 +45,7 @@ carvion.visual = {
   },
 }
 
-carvion.replace = {
+sbb.replace = {
   a = {
     fg = palette.ui.bg.default,
     bg = palette.accent.red.default,
@@ -58,7 +58,7 @@ carvion.replace = {
   },
 }
 
-carvion.command = {
+sbb.command = {
   a = {
     fg = palette.ui.bg.default,
     bg = palette.accent.blue.default,
@@ -71,7 +71,7 @@ carvion.command = {
   },
 }
 
-carvion.terminal = {
+sbb.terminal = {
   a = {
     fg = palette.ui.fg.default,
     bg = palette.ui.bg.option,
@@ -84,7 +84,7 @@ carvion.terminal = {
   },
 }
 
-carvion.inactive = {
+sbb.inactive = {
   a = {
     fg = palette.ui.fg.faint,
     bg = palette.ui.bg.sidebar,
@@ -101,4 +101,4 @@ carvion.inactive = {
   },
 }
 
-return carvion
+return sbb
