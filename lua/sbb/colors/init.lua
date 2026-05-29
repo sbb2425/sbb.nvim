@@ -44,6 +44,7 @@ function M.setup(opts)
       default = v.orange,
       soft = util.blend(v.orange, v.bg, 0.45),
       dim = util.blend(v.orange, v.bg, 0.25),
+      bright = v.orange_bright,
     },
 
     green = {
@@ -75,6 +76,13 @@ function M.setup(opts)
       soft = util.blend(v.neutral, v.bg, 0.45),
       dim = util.blend(v.neutral, v.bg, 0.25),
     },
+
+    gray = {
+      default = v.gray1,
+      soft = v.gray3,
+      dim = v.gray,
+      bright = v.gray2,
+    }
   }
 
   colors.syntax = {

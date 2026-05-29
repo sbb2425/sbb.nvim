@@ -47,7 +47,7 @@ function M.get(opts, c)
 
     TabLine = { fg = c.ui.fg.subtle, bg = c.ui.bg.float },
     TabLineFill = { fg = c.ui.fg.default, bg = c.ui.bg.default },
-    TabLineSel = { fg = c.ui.fg.inverse, bg = c.accent.blue.default },
+    TabLineSel = { fg = c.ui.fg.inverse, bg = c.accent.gray.default },
 
     Folded = { fg = c.ui.fg.subtle, bg = c.ui.bg.float },
     FoldColumn = { fg = c.ui.fg.subtle, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
