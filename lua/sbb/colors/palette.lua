@@ -23,7 +23,7 @@ local colors = {
   cyan = "#9AE3E1",
   cyan_bright = "#0DF5EE",
 
-  neutral = "#5A7070",
+  neutral = "#787b79",
 
   gray = "#222728",
   gray1 = "#3b3f3f",

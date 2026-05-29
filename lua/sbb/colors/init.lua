@@ -16,6 +16,7 @@ function M.setup(opts)
       sidebar = util.lighten(v.bg, 0.02),
       float = util.lighten(v.bg, 0.04),
       option = util.lighten(v.bg, 0.08),
+      inverse = util.invers(v.fg),
       none = "NONE",
     },
 
@@ -25,13 +26,12 @@ function M.setup(opts)
       subtle = util.blend(v.fg, v.bg, 0.52),
       faint = util.blend(v.fg, v.bg, 0.48),
       disabled = util.blend(v.fg, v.bg, 0.32),
-      inverse = v.bg,
+      inverse = util.invers(v.bg),
       none = "NONE",
     },
 
     border = {
-      -- default = util.lighten(v.bg, 0.18),
-      default = v.gray,
+      default = v.gray.dim,
       subtle = util.lighten(v.bg, 0.12),
       strong = util.lighten(v.bg, 0.28),
     },
@@ -39,7 +39,7 @@ function M.setup(opts)
     -- cursorline = util.lighten(v.bg, 0.04),
     cursorline = v.gray,
     -- visual = util.blend(v.fg, v.bg, 0.12),
-    visual = v.gray1
+    visual = v.gray1,
   }
 
   colors.accent = {
@@ -54,24 +54,42 @@ function M.setup(opts)
       default = v.green,
       soft = util.blend(v.green, v.bg, 0.45),
       dim = util.blend(v.green, v.bg, 0.25),
+      bright = v.green_bright,
     },
 
     blue = {
       default = v.blue,
       soft = util.blend(v.blue, v.bg, 0.45),
       dim = util.blend(v.blue, v.bg, 0.25),
+      bright = v.blue_bright,
     },
 
     red = {
       default = v.red,
       soft = util.blend(v.red, v.bg, 0.45),
       dim = util.blend(v.red, v.bg, 0.25),
+      bright = v.red_bright,
     },
 
     yellow = {
       default = v.yellow,
       soft = util.blend(v.yellow, v.bg, 0.45),
       dim = util.blend(v.yellow, v.bg, 0.25),
+      bright = v.yellow_bright,
+    },
+
+    purple = {
+      default = v.purple,
+      soft = util.blend(v.purple, v.bg, 0.45),
+      dim = util.blend(v.purple, v.bg, 0.25),
+      bright = v.purple_bright,
+    },
+
+    cyan = {
+      default = v.cyan,
+      soft = util.blend(v.cyan, v.bg, 0.45),
+      dim = util.blend(v.cyan, v.bg, 0.25),
+      bright = v.cyan_bright,
     },
 
     neutral = {
@@ -82,10 +100,10 @@ function M.setup(opts)
 
     gray = {
       default = v.gray1,
-      soft = v.gray3,
+      soft = v.gray2,
       dim = v.gray,
-      bright = v.gray2,
-    }
+      bright = v.gray3,
+    },
   }
 
   colors.syntax = {

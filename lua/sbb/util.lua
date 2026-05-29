@@ -64,6 +64,24 @@ function M.darken(color, amount)
   return M.blend("#000000", color, amount)
 end
 
+-- Invert color by subtracting each component from 255.
+--
+---@param color string
+---@return string
+function M.invers(color)
+  -- Получаем исходные RGB-компоненты цвета
+  local rgb = hex_to_rgb(color)
+
+  -- Вычисляем инвертированные значения для каждого канала
+  -- Функция clamp гарантирует, что результат будет в диапазоне [0, 255]
+  local r_inverted = clamp(255 - rgb.r)
+  local g_inverted = clamp(255 - rgb.g)
+  local b_inverted = clamp(255 - rgb.b)
+
+  -- Собираем новый цвет из инвертированных компонентов
+  return rgb_to_hex(r_inverted, g_inverted, b_inverted)
+end
+
 -- Resolve `style` fields into highlight attributes.
 -- Merges style value into the highlight and removes the 'style' key.
 --
