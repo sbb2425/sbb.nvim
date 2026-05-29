@@ -10,40 +10,6 @@ function M.setup(opts)
   ---@class sbb.ColorScheme
   local colors = {}
 
-  colors.ui = {
-    bg = {
-      default = v.bg,
-      sidebar = util.lighten(v.bg, 0.02),
-      float = util.lighten(v.bg, 0.04),
-      option = util.lighten(v.bg, 0.08),
-      -- inverse = util.invert(v.fg),
-      inverse = v.fg,
-      none = "NONE",
-    },
-
-    fg = {
-      default = v.fg,
-      muted = util.blend(v.fg, v.bg, 0.68),
-      subtle = util.blend(v.fg, v.bg, 0.52),
-      faint = util.blend(v.fg, v.bg, 0.48),
-      disabled = util.blend(v.fg, v.bg, 0.32),
-      -- inverse = util.invert(v.bg),
-      inverse = v.bg,
-      none = "NONE",
-    },
-
-    border = {
-      default = colors.accent.gray.dim,
-      subtle = util.lighten(v.bg, 0.12),
-      strong = util.lighten(v.bg, 0.28),
-    },
-
-    -- cursorline = util.lighten(v.bg, 0.04),
-    cursorline = colors.accent.gray.dim,
-    -- visual = util.blend(v.fg, v.bg, 0.12),
-    visual = colors.accent.gray.default,
-  }
-
   colors.accent = {
     orange = {
       default = v.orange,
@@ -106,6 +72,40 @@ function M.setup(opts)
       dim = v.gray,
       bright = v.gray3,
     },
+  }
+
+  colors.ui = {
+    bg = {
+      default = v.bg,
+      sidebar = util.lighten(v.bg, 0.02),
+      float = util.lighten(v.bg, 0.04),
+      option = util.lighten(v.bg, 0.08),
+      -- inverse = util.invert(v.fg),
+      inverse = v.fg,
+      none = "NONE",
+    },
+
+    fg = {
+      default = v.fg,
+      muted = util.blend(v.fg, v.bg, 0.68),
+      subtle = util.blend(v.fg, v.bg, 0.52),
+      faint = util.blend(v.fg, v.bg, 0.48),
+      disabled = util.blend(v.fg, v.bg, 0.32),
+      -- inverse = util.invert(v.bg),
+      inverse = v.bg,
+      none = "NONE",
+    },
+
+    border = {
+      default = colors.accent.gray.dim,
+      subtle = util.lighten(v.bg, 0.12),
+      strong = util.lighten(v.bg, 0.28),
+    },
+
+    -- cursorline = util.lighten(v.bg, 0.04),
+    cursorline = colors.accent.gray.dim,
+    -- visual = util.blend(v.fg, v.bg, 0.12),
+    visual = colors.accent.gray.default,
   }
 
   colors.syntax = {
