@@ -109,10 +109,11 @@ function M.setup(opts)
   }
 
   colors.syntax = {
-    comments = util.blend(v.fg, v.bg, 0.42),
+    comments = colors.accent.gray.soft,
 
-    constants = colors.accent.neutral.default,
+    constants = colors.accent.yellow.default,
     strings = colors.accent.green.default,
+
     identifiers = colors.ui.fg.default,
     functions = colors.accent.orange.default,
 
@@ -120,7 +121,7 @@ function M.setup(opts)
     operators = util.blend(v.fg, v.bg, 0.50),
 
     types = colors.accent.blue.default,
-    members = util.blend(v.fg, v.bg, 0.78),
+    members = colors.accent.cyan.default,
     links = colors.accent.blue.default,
   }
   colors.diag = {
