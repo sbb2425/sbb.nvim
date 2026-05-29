@@ -16,7 +16,7 @@ function M.setup(opts)
       sidebar = util.lighten(v.bg, 0.02),
       float = util.lighten(v.bg, 0.04),
       option = util.lighten(v.bg, 0.08),
-      -- inverse = util.inverse(v.fg),
+      -- inverse = util.invert(v.fg),
       inverse = v.fg,
       none = "NONE",
     },
@@ -27,21 +27,21 @@ function M.setup(opts)
       subtle = util.blend(v.fg, v.bg, 0.52),
       faint = util.blend(v.fg, v.bg, 0.48),
       disabled = util.blend(v.fg, v.bg, 0.32),
-      -- inverse = util.inverse(v.bg),
+      -- inverse = util.invert(v.bg),
       inverse = v.bg,
       none = "NONE",
     },
 
     border = {
-      default = v.gray.dim,
+      default = colors.accent.gray.dim,
       subtle = util.lighten(v.bg, 0.12),
       strong = util.lighten(v.bg, 0.28),
     },
 
     -- cursorline = util.lighten(v.bg, 0.04),
-    cursorline = v.gray,
+    cursorline = colors.accent.gray.dim,
     -- visual = util.blend(v.fg, v.bg, 0.12),
-    visual = v.gray1,
+    visual = colors.accent.gray.default,
   }
 
   colors.accent = {

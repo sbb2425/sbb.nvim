@@ -23,12 +23,12 @@ local colors = {
   cyan = "#9AE3E1",
   cyan_bright = "#0DF5EE",
 
-  neutral = "#787b79",
+  neutral = "#787B79",
 
   gray = "#222728",
-  gray1 = "#3b3f3f",
+  gray1 = "#3B3F3F",
   gray2 = "#535756",
-  gray3 = "#6c6f6d",
+  gray3 = "#6C6F6D",
 }
 
 palette.dark = util.deep_merge(colors, {
