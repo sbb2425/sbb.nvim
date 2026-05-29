@@ -121,7 +121,7 @@ function M.setup(opts)
     operators = util.blend(v.fg, v.bg, 0.50),
 
     types = colors.accent.blue.default,
-    members = colors.accent.cyan.default,
+    members = colors.accent.neutral.default,
     links = colors.accent.blue.default,
   }
   colors.diag = {
