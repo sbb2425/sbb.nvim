@@ -68,7 +68,7 @@ end
 --
 ---@param color string
 ---@return string
-function M.invers(color)
+function M.inverse(color)
   -- Получаем исходные RGB-компоненты цвета
   local rgb = hex_to_rgb(color)
 

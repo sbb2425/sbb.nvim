@@ -16,7 +16,8 @@ function M.setup(opts)
       sidebar = util.lighten(v.bg, 0.02),
       float = util.lighten(v.bg, 0.04),
       option = util.lighten(v.bg, 0.08),
-      inverse = util.invers(v.fg),
+      -- inverse = util.inverse(v.fg),
+      inverse = v.fg,
       none = "NONE",
     },
 
@@ -26,7 +27,8 @@ function M.setup(opts)
       subtle = util.blend(v.fg, v.bg, 0.52),
       faint = util.blend(v.fg, v.bg, 0.48),
       disabled = util.blend(v.fg, v.bg, 0.32),
-      inverse = util.invers(v.bg),
+      -- inverse = util.inverse(v.bg),
+      inverse = v.bg,
       none = "NONE",
     },
 
