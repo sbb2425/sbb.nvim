@@ -109,8 +109,7 @@ function M.setup(opts)
   }
 
   colors.syntax = {
-    -- comments = colors.accent.gray.soft,
-    comments = colors.accent.red.default,
+    comments = colors.accent.gray.soft,
 
     constants = colors.accent.yellow.default,
     strings = colors.accent.green.default,
@@ -118,7 +117,8 @@ function M.setup(opts)
     identifiers = colors.ui.fg.default,
     functions = colors.accent.orange.default,
 
-    keywords = util.blend(v.fg, v.bg, 0.20),
+    -- keywords = util.blend(v.fg, v.bg, 0.20),
+    keywords = colors.accent.red.default,
     operators = util.blend(v.fg, v.bg, 0.40),
 
     types = colors.accent.blue.default,
