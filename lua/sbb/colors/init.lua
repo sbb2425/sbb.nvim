@@ -118,12 +118,11 @@ function M.setup(opts)
     functions = colors.accent.orange.default,
 
     -- keywords = util.blend(v.fg, v.bg, 0.20),
-    keywords = colors.accent.gray.bright,
-    -- operators = util.blend(v.fg, v.bg, 0.40),
-    -- operators = colors.accent.red.bright,
+    keywords = colors.accent.neutral.default,
+    operators = util.blend(v.fg, v.bg, 0.20),
 
-    types = colors.accent.blue.default,
-    members = colors.accent.red.default,
+    types = colors.accent.red.default,
+    members = colors.accent.neutral.soft,
     links = colors.accent.blue.default,
   }
   colors.diag = {
