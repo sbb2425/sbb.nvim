@@ -119,7 +119,7 @@ function M.setup(opts)
 
     -- keywords = util.blend(v.fg, v.bg, 0.20),
     keywords = colors.accent.neutral.default,
-    operators = util.blend(v.fg, v.bg, 0.20),
+    operators = util.blend(v.fg, v.bg, 0.80),
 
     types = colors.accent.red.default,
     members = colors.accent.neutral.soft,
