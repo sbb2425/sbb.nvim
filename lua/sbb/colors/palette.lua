@@ -12,22 +12,22 @@ palette.dark = {
   blue = "#9ACDE3",
   blue_bright = "#0DAEF5",
 
-  green = "#ABE3D0",
-  green_bright = "#47FFC1",
+  green = "#9AE3E1",
+  green_bright = "#0ABAB5",
 
   red = "#E39A96",
   red_bright = "#D6746F",
 
-  yellow = "#F5F3C2",
-  yellow_bright = "#D6D375",
+  yellow = "#E3E19A",
+  yellow_bright = "#F5EE0D",
 
   purple = "#DAC2F5",
   purple_bright = "#A375D6",
 
-  cyan = "#9AE3E1",
-  cyan_bright = "#0DF5EE",
+  cyan = "#75B8D6",
+  cyan_bright = "#0DAEF5",
 
-  neutral = "#989B99",
+  neutral = "#a8aBa9",
 
   gray = "#222728",
   gray1 = "#3B3F3F",
