@@ -109,7 +109,8 @@ function M.setup(opts)
   }
 
   colors.syntax = {
-    comments = colors.accent.gray.soft,
+    -- comments = colors.accent.gray.soft,
+    comments = colors.accent.red.default,
 
     constants = colors.accent.yellow.default,
     strings = colors.accent.green.default,
