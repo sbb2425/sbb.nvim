@@ -120,10 +120,10 @@ function M.setup(opts)
     -- keywords = util.blend(v.fg, v.bg, 0.20),
     keywords = colors.accent.gray.bright,
     -- operators = util.blend(v.fg, v.bg, 0.40),
-    operators = colors.accent.red.bright,
+    -- operators = colors.accent.red.bright,
 
     types = colors.accent.blue.default,
-    members = colors.accent.gray.bright,
+    members = colors.accent.red.default,
     links = colors.accent.blue.default,
   }
   colors.diag = {
