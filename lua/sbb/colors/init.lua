@@ -117,11 +117,11 @@ function M.setup(opts)
     identifiers = colors.ui.fg.default,
     functions = colors.accent.orange.default,
 
-    keywords = util.blend(v.fg, v.bg, 0.62),
-    operators = util.blend(v.fg, v.bg, 0.50),
+    keywords = util.blend(v.fg, v.bg, 0.20),
+    operators = util.blend(v.fg, v.bg, 0.40),
 
     types = colors.accent.blue.default,
-    members = colors.accent.neutral.default,
+    members = colors.accent.gray.bright,
     links = colors.accent.blue.default,
   }
   colors.diag = {
