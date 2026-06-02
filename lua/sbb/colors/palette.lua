@@ -9,11 +9,11 @@ palette.dark = {
   orange = "#D6A375",
   orange_bright = "#F57A0D",
 
-  blue = "#9ACDE3",
+  blue = "#75B8D6",
   blue_bright = "#0DAEF5",
 
-  green = "#9AE3E1",
-  green_bright = "#0ABAB5",
+  green = "#8CD6BD",
+  green_bright = "#7FFFD4",
 
   red = "#E39A96",
   red_bright = "#D6746F",
@@ -24,8 +24,8 @@ palette.dark = {
   purple = "#DAC2F5",
   purple_bright = "#A375D6",
 
-  cyan = "#75B8D6",
-  cyan_bright = "#0DAEF5",
+  cyan = "#9AE3E1",
+  cyan_bright = "#0ABAB5",
 
   neutral = "#a8aBa9",
 
