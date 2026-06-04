@@ -226,6 +226,20 @@ function M.get(opts, c)
 
     --Yazi
     YaziFloatBorder = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.default, fg = c.ui.border.default },
+
+    --MarkdownRender
+    RenderMarkdownH1 = { fg = c.accent.cyan.bright },
+    RenderMarkdownH2 = { fg = c.accent.green.bright },
+    RenderMarkdownH3 = { fg = c.accent.blue.bright },
+    RenderMarkdownH4 = { fg = c.accent.purple.bright },
+    RenderMarkdownH5 = { fg = c.accent.orange.bright },
+    RenderMarkdownH6 = { fg = c.accent.yellow.bright },
+		RenderMarkdownH1Bg = { fg = c.accent.cyan.dim },
+		RenderMarkdownH2Bg = { fg = c.accent.green.dim },
+		RenderMarkdownH3Bg = { fg = c.accent.blue.dim },
+		RenderMarkdownH4Bg = { fg = c.accent.purple.dim },
+		RenderMarkdownH5Bg = { fg = c.accent.orange.dim },
+		RenderMarkdownH6Bg = { fg = c.accent.yellow.dim },
   }
 end
 
