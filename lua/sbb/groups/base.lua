@@ -6,7 +6,7 @@ function M.get(opts, c)
     -- Core UI
     Normal = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
     NormalNC = "Normal",
-    NormalSB = { fg = c.ui.fg.default, bg = c.ui.bg.sidebar },
+    NormalSB = { fg = c.ui.fg.default, bg = c.ui.bg.default },
 
     Conceal = { fg = c.ui.fg.subtle },
 
@@ -47,7 +47,6 @@ function M.get(opts, c)
 
     TabLine = { fg = c.accent.gray.default, bg = c.ui.bg.float },
     TabLineFill = { fg = c.ui.fg.default, bg = c.ui.bg.default },
-    -- TabLineSel = { fg = c.ui.fg.inverse, bg = c.accent.gray.dim },
     TabLineSel = { fg = c.accent.gray.bright, bg = c.accent.gray.dim },
 
     Folded = { fg = c.ui.fg.subtle, bg = c.ui.bg.float },
