@@ -61,7 +61,7 @@ function M.get(opts, c)
     -- Floating UI
     NormalFloat = { fg = c.ui.fg.default, bg = c.ui.bg.float },
 
-    FloatBorder = { fg = c.ui.border.default, bg = c.ui.bg.float },
+    FloatBorder = { fg = c.ui.border.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
     FloatTitle = { fg = c.accent.orange.default, bg = c.ui.bg.float, bold = true },
 
     Pmenu = { fg = c.ui.fg.default, bg = c.ui.bg.float },
