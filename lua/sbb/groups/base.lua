@@ -226,7 +226,7 @@ function M.get(opts, c)
     htmlH2 = "htmlH1",
 
     --Yazi
-    YaziFloatBorder = { bg = c.ui.bg.default, fg = c.ui.border.default },
+    YaziFloatBorder = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.default, fg = c.ui.border.default },
   }
 end
 
