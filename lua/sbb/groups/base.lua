@@ -224,6 +224,9 @@ function M.get(opts, c)
     dosIniLabel = { fg = c.accent.orange.default },
     htmlH1 = { fg = c.accent.orange.default },
     htmlH2 = "htmlH1",
+
+    --Yazi
+    YaziFloatBorder = { bg = c.ui.bg.default, fg = c.ui.border.default },
   }
 end
 
