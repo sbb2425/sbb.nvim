@@ -234,12 +234,12 @@ function M.get(opts, c)
     RenderMarkdownH4 = { fg = c.accent.purple.bright },
     RenderMarkdownH5 = { fg = c.accent.orange.bright },
     RenderMarkdownH6 = { fg = c.accent.yellow.bright },
-		RenderMarkdownH1Bg = { fg = c.accent.cyan.dim },
-		RenderMarkdownH2Bg = { fg = c.accent.green.dim },
-		RenderMarkdownH3Bg = { fg = c.accent.blue.dim },
-		RenderMarkdownH4Bg = { fg = c.accent.purple.dim },
-		RenderMarkdownH5Bg = { fg = c.accent.orange.dim },
-		RenderMarkdownH6Bg = { fg = c.accent.yellow.dim },
+    RenderMarkdownH1Bg = { fg = c.accent.cyan.bright, bg = c.accent.cyan.dim },
+    RenderMarkdownH2Bg = { fg = c.accent.green.bright, bg = c.accent.green.dim },
+    RenderMarkdownH3Bg = { fg = c.accent.blue.bright, bg = c.accent.blue.dim },
+    RenderMarkdownH4Bg = { fg = c.accent.purple.bright, bg = c.accent.purple.dim },
+    RenderMarkdownH5Bg = { fg = c.accent.orange.bright, bg = c.accent.orange.dim },
+    RenderMarkdownH6Bg = { fg = c.accent.yellow.bright, bg = c.accent.yellow.dim },
   }
 end
 
