@@ -15,6 +15,7 @@ function M.setup(opts)
       default = v.orange,
       soft = util.blend(v.orange, v.bg, 0.45),
       dim = util.blend(v.orange, v.bg, 0.25),
+      dark = util.blend(v.orange, v.bg, 0.1),
       bright = v.orange_bright,
     },
 
@@ -22,6 +23,7 @@ function M.setup(opts)
       default = v.green,
       soft = util.blend(v.green, v.bg, 0.45),
       dim = util.blend(v.green, v.bg, 0.25),
+      dark = util.blend(v.green, v.bg, 0.1),
       bright = v.green_bright,
     },
 
@@ -29,6 +31,7 @@ function M.setup(opts)
       default = v.blue,
       soft = util.blend(v.blue, v.bg, 0.45),
       dim = util.blend(v.blue, v.bg, 0.25),
+      dark = util.blend(v.blue, v.bg, 0.1),
       bright = v.blue_bright,
     },
 
@@ -36,6 +39,7 @@ function M.setup(opts)
       default = v.red,
       soft = util.blend(v.red, v.bg, 0.45),
       dim = util.blend(v.red, v.bg, 0.25),
+      dark = util.blend(v.red, v.bg, 0.1),
       bright = v.red_bright,
     },
 
@@ -43,6 +47,7 @@ function M.setup(opts)
       default = v.yellow,
       soft = util.blend(v.yellow, v.bg, 0.45),
       dim = util.blend(v.yellow, v.bg, 0.25),
+      dark = util.blend(v.yellow, v.bg, 0.1),
       bright = v.yellow_bright,
     },
 
@@ -50,6 +55,7 @@ function M.setup(opts)
       default = v.purple,
       soft = util.blend(v.purple, v.bg, 0.45),
       dim = util.blend(v.purple, v.bg, 0.25),
+      dark = util.blend(v.purple, v.bg, 0.1),
       bright = v.purple_bright,
     },
 
@@ -57,6 +63,7 @@ function M.setup(opts)
       default = v.cyan,
       soft = util.blend(v.cyan, v.bg, 0.45),
       dim = util.blend(v.cyan, v.bg, 0.25),
+      dark = util.blend(v.cyan, v.bg, 0.1),
       bright = v.cyan_bright,
     },
 
@@ -64,12 +71,14 @@ function M.setup(opts)
       default = v.neutral,
       soft = util.blend(v.neutral, v.bg, 0.45),
       dim = util.blend(v.neutral, v.bg, 0.25),
+      dark = util.blend(v.neutral, v.bg, 0.1),
     },
 
     gray = {
       default = v.gray1,
       soft = v.gray2,
       dim = v.gray,
+      dark = util.blend(v.gray, v.bg, 0.1),
       bright = v.gray3,
     },
   }
@@ -91,6 +100,7 @@ function M.setup(opts)
       subtle = util.blend(v.fg, v.bg, 0.52),
       faint = util.blend(v.fg, v.bg, 0.48),
       disabled = util.blend(v.fg, v.bg, 0.32),
+      dark = util.blend(v.fg, v.bg, 0.1),
       -- inverse = util.invert(v.bg),
       inverse = v.bg,
       none = "NONE",
