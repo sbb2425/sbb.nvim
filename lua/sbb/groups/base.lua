@@ -245,7 +245,7 @@ function M.get(opts, c)
     RenderMarkdownCodeInfo = { bg = c.accent.gray.dim },
     RenderMarkdownCodeBorder = { fg = c.accent.neutral.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
     -- RenderMarkdownCodeFallback
-    RenderMarkdownCodeInline = { fg = c.accent.neutral.default, bg = opts.transparent and c.accent.gray.dim },
+    RenderMarkdownCodeInline = { fg = c.accent.neutral.default, bg = c.accent.gray.dim },
   }
 end
 
