@@ -260,7 +260,7 @@ function M.get(opts, c)
     RenderMarkdownQuote4 = { fg = c.accent.purple.default },
     RenderMarkdownQuote5 = { fg = c.accent.orange.default },
     RenderMarkdownQuote6 = { fg = c.accent.yellow.default },
-    RenderMarkdownTableHead = { fg = c.accent.gray.default, bg = c.accent.blue.dim },
+    RenderMarkdownTableHead = { fg = c.accent.gray.default },
     RenderMarkdownTableRow = { fg = c.accent.gray.default },
     RenderMarkdownSuccess = { fg = c.accent.cyan.bright, bg = c.accent.cyan.dim },
     RenderMarkdownHint = { fg = c.accent.green.bright, bg = c.accent.green.dim },
