@@ -240,6 +240,12 @@ function M.get(opts, c)
     RenderMarkdownH4Bg = { fg = c.accent.purple.bright, bg = c.accent.purple.dim },
     RenderMarkdownH5Bg = { fg = c.accent.orange.bright, bg = c.accent.orange.dim },
     RenderMarkdownH6Bg = { fg = c.accent.yellow.bright, bg = c.accent.yellow.dim },
+
+    RenderMarkdownCode = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
+    RenderMarkdownCodeInfo = { bg = c.accent.gray.dim },
+    RenderMarkdownCodeBorder = { fg = c.accent.neutral.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
+    -- RenderMarkdownCodeFallback
+    RenderMarkdownCodeInline = { fg = c.accent.neutral.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
   }
 end
 
