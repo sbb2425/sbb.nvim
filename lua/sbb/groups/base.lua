@@ -243,9 +243,34 @@ function M.get(opts, c)
 
     RenderMarkdownCode = { bg = c.accent.gray.dim },
     RenderMarkdownCodeInfo = { bg = c.accent.gray.dim },
-    RenderMarkdownCodeBorder = { fg = c.accent.neutral.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
-    -- RenderMarkdownCodeFallback
+    RenderMarkdownCodeBorder = {
+      fg = c.accent.neutral.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
+    RenderMarkdownCodeFallback = { fg = c.accent.purple.bright, bg = c.accent.purple.dim },
     RenderMarkdownCodeInline = { fg = c.accent.neutral.default, bg = c.accent.gray.dim },
+    RenderMarkdownUnchecked = { fg = c.accent.orange.default },
+    RenderMarkdownChecked = { fg = c.accent.green.default },
+    RenderMarkdownTodo = { fg = c.accent.blue.default },
+    RenderMarkdownDash = { fg = c.accent.gray.default },
+    RenderMarkdownBullet = { fg = c.accent.cyan.default },
+    RenderMarkdownQuote1 = { fg = c.accent.green.default },
+    RenderMarkdownQuote2 = { fg = c.accent.cyan.default },
+    RenderMarkdownQuote3 = { fg = c.accent.blue.default },
+    RenderMarkdownQuote4 = { fg = c.accent.purple.default },
+    RenderMarkdownQuote5 = { fg = c.accent.orange.default },
+    RenderMarkdownQuote6 = { fg = c.accent.yellow.default },
+    RenderMarkdownTableHead = { fg = c.accent.gray.default, bg = c.accent.blue.dim },
+    RenderMarkdownTableRow = { fg = c.accent.gray.default },
+    RenderMarkdownSuccess = { fg = c.accent.cyan.bright, bg = c.accent.cyan.dim },
+    RenderMarkdownHint = { fg = c.accent.green.bright, bg = c.accent.green.dim },
+    RenderMarkdownWarn = { fg = c.accent.orange.bright, bg = c.accent.orange.dim },
+    RenderMarkdownInfo = { fg = c.accent.purple.bright, bg = c.accent.purple.dim },
+    RenderMarkdownError = { fg = c.accent.red.bright, bg = c.accent.red.dim },
+    RenderMarkdownQuote = { fg = c.accent.purple.bright, bg = c.accent.purple.dim },
+    RenderMarkdownLink = { fg = c.accent.blue.default },
+    RenderMarkdownLinkTitle = { fg = c.accent.gray.bright },
+    RenderMarkdownWikiLink = { fg = c.accent.yellow.default },
   }
 end
 
