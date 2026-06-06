@@ -78,7 +78,7 @@ function M.setup(opts)
       default = v.gray1,
       soft = v.gray2,
       dim = v.gray,
-      dark = util.blend(v.g, v.bg, 0.3),
+      dark = util.blend(v.gray, v.bg, 0.3),
       bright = v.gray3,
     },
   }
