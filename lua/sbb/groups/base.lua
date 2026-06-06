@@ -242,13 +242,10 @@ function M.get(opts, c)
     RenderMarkdownH6Bg = { fg = c.accent.yellow.bright, bg = c.accent.yellow.dim },
 
     RenderMarkdownCode = { bg = c.accent.gray.dark },
-    RenderMarkdownCodeInfo = { fg = c.accent.purple.bright, bg = c.accent.purple.dark },
-    RenderMarkdownCodeBorder = {
-      fg = c.accent.neutral.default,
-      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
-    },
-    RenderMarkdownCodeFallback = { fg = c.accent.purple.bright, bg = c.accent.purple.dim },
-    RenderMarkdownCodeInline = { fg = c.accent.neutral.default, bg = c.accent.gray.dark },
+    RenderMarkdownCodeInfo = { bg = c.accent.purple.dim },
+    RenderMarkdownCodeBorder = { bg = c.accent.blue.dim },
+    RenderMarkdownCodeFallback = { bg = c.accent.purple.dim },
+    RenderMarkdownCodeInline = { bg = c.accent.gray.dark },
     RenderMarkdownUnchecked = { fg = c.accent.orange.default },
     RenderMarkdownChecked = { fg = c.accent.green.default },
     RenderMarkdownTodo = { fg = c.accent.blue.default },
