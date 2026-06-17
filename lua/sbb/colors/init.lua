@@ -86,9 +86,9 @@ function M.setup(opts)
   colors.ui = {
     bg = {
       default = v.bg,
-      sidebar = util.lighten(v.bg, 0.02),
-      float = util.lighten(v.bg, 0.04),
-      option = util.lighten(v.bg, 0.08),
+      sidebar = util.lighten(v.bg, 0.04),
+      float = util.lighten(v.bg, 0.08),
+      option = util.lighten(v.bg, 0.15),
       -- inverse = util.invert(v.fg),
       inverse = v.fg,
       none = "NONE",
