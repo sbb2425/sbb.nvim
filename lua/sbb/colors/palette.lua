@@ -3,8 +3,8 @@ local util = require("sbb.util")
 local palette = {}
 
 palette.dark = {
-  bg = "#093828",
-  fg = "#E4FAF3",
+  bg = "#102625",
+  fg = "#DEFAF9",
 
   orange = "#D6A375",
   orange_bright = "#F57A0D",
