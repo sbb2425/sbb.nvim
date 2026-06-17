@@ -4,7 +4,7 @@ local palette = {}
 
 palette.dark = {
   bg = "#002624",
-  fg = "#D6D6D2",
+  fg = "#CAD6D2",
 
   orange = "#D6A375",
   orange_bright = "#F57A0D",
