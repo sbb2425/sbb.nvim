@@ -3,42 +3,36 @@ local util = require("sbb.util")
 local palette = {}
 
 palette.dark = {
-  bg = "#000A0A",
-  fg = "#DEFAF9",
+  bg = "#081614",
+  fg = "#EFECD4",
 
-  orange = "#D6A375",
-  orange_bright = "#F57A0D",
+  orange = "#B57145",
+  orange_bright = "#643E26",
 
-  blue = "#75B8D6",
-  blue_bright = "#0DAEF5",
+  blue = "#4588B5",
+  blue_bright = "#2A5470",
 
-  green = "#8CD6BD",
-  green_bright = "#7FFFD4",
+  green = "#45B572",
+  green_bright = "#26643F",
 
-  red = "#E39A96",
-  red_bright = "#D6746F",
+  red = "#B54587",
+  red_bright = "#702A53",
 
-  yellow = "#E3E19A",
-  yellow_bright = "#F5EE0D",
+  yellow = "#B5AA45",
+  yellow_bright = "#645E26",
 
-  purple = "#DAC2F5",
-  purple_bright = "#A375D6",
+  purple = "#7145B5",
+  purple_bright = "#4D2F7B",
 
-  cyan = "#9AE3E1",
-  cyan_bright = "#0ABAB5",
+  cyan = "#45B5AA",
+  cyan_bright = "#2A7069",
 
-  neutral = "#9D9E9C",
+  neutral = "#C6C6C6",
 
-  gray = "#3B3F3F",
-  gray1 = "#535756",
-  gray2 = "#6c6f6d",
-  gray3 = "#848685",
+  gray = "#454545",
+  gray1 = "#5D5D5D",
+  gray2 = "#7D7D7D",
+  gray3 = "#9D9D9D",
 }
-
-
-
-
-
-
 
 return palette
