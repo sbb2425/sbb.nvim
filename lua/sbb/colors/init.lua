@@ -122,7 +122,7 @@ function M.setup(opts)
     comments = colors.accent.gray.soft,
 
     constants = colors.accent.yellow.default,
-    strings = colors.accent.green.default,
+    strings = colors.accent.cyan.default,
 
     identifiers = colors.ui.fg.default,
     functions = colors.accent.orange.default,
