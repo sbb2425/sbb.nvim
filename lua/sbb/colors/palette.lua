@@ -27,7 +27,7 @@ palette.dark = {
   cyan = "#45B5AA",
   cyan_bright = "#2A7069",
 
-  neutral = "#C6C6C6",
+  neutral = "#A5A5A5",
 
   gray = "#454545",
   gray1 = "#5D5D5D",
