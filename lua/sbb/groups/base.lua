@@ -10,7 +10,7 @@ function M.get(opts, c)
 
     Conceal = { fg = c.ui.fg.subtle },
 
-    Cursor = { fg = c.ui.fg.inverse, bg = c.accent.orange.default },
+    Cursor = { fg = c.ui.fg.inverse, bg = c.accent.cyan.default },
     lCursor = "Cursor",
     CursorIM = "Cursor",
 
@@ -46,7 +46,7 @@ function M.get(opts, c)
     StatusLineNC = { fg = c.ui.fg.muted, bg = c.ui.bg.default },
 
     TabLine = { fg = c.accent.gray.default, bg = c.ui.bg.float },
-    TabLineFill = { fg = c.ui.fg.default, bg = c.ui.bg.default },
+    TabLineFill = { fg = c.ui.fg.default, bg = c.ui.bg.float },
     TabLineSel = { fg = c.accent.gray.bright, bg = c.accent.gray.dim },
 
     Folded = { fg = c.ui.fg.subtle, bg = c.ui.bg.float },

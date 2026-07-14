@@ -15,56 +15,56 @@ function M.setup(opts)
       default = v.orange,
       soft = util.blend(v.orange, v.bg, 0.45),
       dim = util.blend(v.orange, v.bg, 0.25),
-      dark = util.blend(v.orange, v.bg, 0.12),
-      bright = v.orange_bright,
+      dark = v.orange_dark,
+      bright = v.orange_dark,
     },
 
     green = {
       default = v.green,
       soft = util.blend(v.green, v.bg, 0.45),
       dim = util.blend(v.green, v.bg, 0.25),
-      dark = util.blend(v.green, v.bg, 0.12),
-      bright = v.green_bright,
+      dark = v.green_dark,
+      bright = v.green_dark,
     },
 
     blue = {
       default = v.blue,
       soft = util.blend(v.blue, v.bg, 0.45),
       dim = util.blend(v.blue, v.bg, 0.25),
-      dark = util.blend(v.blue, v.bg, 0.12),
-      bright = v.blue_bright,
+      dark = v.blue_dark,
+      bright = v.blue_dark,
     },
 
     red = {
       default = v.red,
       soft = util.blend(v.red, v.bg, 0.45),
       dim = util.blend(v.red, v.bg, 0.25),
-      dark = util.blend(v.red, v.bg, 0.12),
-      bright = v.red_bright,
+      dark = v.red_dark,
+      bright = v.red_dark,
     },
 
     yellow = {
       default = v.yellow,
       soft = util.blend(v.yellow, v.bg, 0.45),
       dim = util.blend(v.yellow, v.bg, 0.25),
-      dark = util.blend(v.yellow, v.bg, 0.12),
-      bright = v.yellow_bright,
+      dark = v.yellow_dark,
+      bright = v.yellow_dark,
     },
 
     purple = {
       default = v.purple,
       soft = util.blend(v.purple, v.bg, 0.45),
       dim = util.blend(v.purple, v.bg, 0.25),
-      dark = util.blend(v.purple, v.bg, 0.12),
-      bright = v.purple_bright,
+      dark = v.purple_dark,
+      bright = v.purple_dark,
     },
 
     cyan = {
       default = v.cyan,
       soft = util.blend(v.cyan, v.bg, 0.45),
       dim = util.blend(v.cyan, v.bg, 0.25),
-      dark = util.blend(v.cyan, v.bg, 0.12),
-      bright = v.cyan_bright,
+      dark = v.cyan_dark,
+      bright = v.cyan_dark,
     },
 
     neutral = {
@@ -75,20 +75,20 @@ function M.setup(opts)
     },
 
     gray = {
-      default = v.gray1,
-      soft = v.gray2,
-      dim = v.gray,
-      dark = util.blend(v.gray, v.bg, 0.28),
-      bright = v.gray3,
+      default = v.gray,
+      soft = v.gray_soft,
+      dim = util.blend(v.gray, v.bg, 0.28),
+      dark = v.gray_dark,
+      bright = v.gray_light,
     },
   }
 
   colors.ui = {
     bg = {
       default = v.bg,
-      sidebar = util.lighten(v.bg, 0.04),
-      float = util.lighten(v.bg, 0.08),
-      option = util.lighten(v.bg, 0.15),
+      sidebar = v.bg_soft,
+      float = v.bg_soft,
+      option = v.bg_soft,
       -- inverse = util.invert(v.fg),
       inverse = v.fg,
       none = "NONE",
@@ -99,27 +99,26 @@ function M.setup(opts)
       muted = util.blend(v.fg, v.bg, 0.68),
       subtle = util.blend(v.fg, v.bg, 0.52),
       faint = util.blend(v.fg, v.bg, 0.48),
-      disabled = util.blend(v.fg, v.bg, 0.32),
-      dark = util.blend(v.fg, v.bg, 0.18),
+      disabled = v.neutral,
+      dark = v.fg_dark,
       -- inverse = util.invert(v.bg),
       inverse = v.bg,
       none = "NONE",
     },
 
     border = {
-      default = colors.accent.gray.dim,
-      subtle = util.lighten(v.bg, 0.12),
-      strong = util.lighten(v.bg, 0.28),
+      default = colors.accent.cyan.default,
+      subtle = colors.accent.cyan.dark,
+      strong = colors.accent.cyan.dark,
     },
 
     -- cursorline = util.lighten(v.bg, 0.04),
-    cursorline = colors.accent.gray.dim,
-    -- visual = util.blend(v.fg, v.bg, 0.12),
-    visual = colors.accent.gray.default,
+    cursorline = colors.accent.bg.soft,
+    visual = colors.accent.bg.soft,
   }
 
   colors.syntax = {
-    comments = colors.accent.gray.soft,
+    comments = colors.accent.gray.default,
 
     constants = colors.accent.yellow.default,
     strings = colors.accent.cyan.default,
@@ -127,9 +126,8 @@ function M.setup(opts)
     identifiers = colors.ui.fg.default,
     functions = colors.accent.orange.default,
 
-    -- keywords = util.blend(v.fg, v.bg, 0.20),
-    keywords = colors.accent.neutral.default,
-    operators = util.blend(v.fg, v.bg, 0.60),
+    keywords = colors.accent.fg.dark,
+    operators = colors.accent.gray.soft,
 
     types = colors.accent.red.default,
     members = colors.accent.neutral.default,
