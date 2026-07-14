@@ -91,6 +91,8 @@ function M.setup(opts)
       option = v.bg_soft,
       -- inverse = util.invert(v.fg),
       inverse = v.fg,
+      soft = v.bg_soft,
+      light = v.bg_light,
       none = "NONE",
     },
 
@@ -101,6 +103,7 @@ function M.setup(opts)
       faint = util.blend(v.fg, v.bg, 0.48),
       disabled = v.neutral,
       dark = v.fg_dark,
+      neutral = v.neutral,
       -- inverse = util.invert(v.bg),
       inverse = v.bg,
       none = "NONE",
@@ -109,12 +112,12 @@ function M.setup(opts)
     border = {
       default = colors.accent.cyan.default,
       subtle = colors.accent.cyan.dark,
-      strong = colors.accent.cyan.dark,
+      strong = colors.accent.cyan.default,
     },
 
     -- cursorline = util.lighten(v.bg, 0.04),
     cursorline = colors.accent.bg.soft,
-    visual = colors.accent.bg.soft,
+    visual = colors.accent.bg.light,
   }
 
   colors.syntax = {
