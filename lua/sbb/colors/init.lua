@@ -116,7 +116,7 @@ function M.setup(opts)
     },
 
     -- cursorline = util.lighten(v.bg, 0.04),
-    cursorline = colors.ui.bg.soft,
+    cursorline = colors.ui.bg.sidebar,
     visual = colors.ui.bg.light,
   }
 
