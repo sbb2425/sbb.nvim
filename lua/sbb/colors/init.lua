@@ -129,11 +129,11 @@ function M.setup(opts)
     identifiers = colors.ui.fg.default,
     functions = colors.accent.orange.default,
 
-    keywords = colors.ui.fg.dark,
+    keywords = colors.accent.neutral.default,
     operators = colors.accent.gray.soft,
 
     types = colors.accent.red.default,
-    members = colors.accent.neutral.default,
+    members = colors.ui.fg.dark,
     links = colors.accent.blue.default,
   }
   colors.diag = {
