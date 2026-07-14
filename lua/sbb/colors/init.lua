@@ -116,8 +116,8 @@ function M.setup(opts)
     },
 
     -- cursorline = util.lighten(v.bg, 0.04),
-    cursorline = colors.accent.bg.soft,
-    visual = colors.accent.bg.light,
+    cursorline = colors.ui.bg.soft,
+    visual = colors.ui.bg.light,
   }
 
   colors.syntax = {
@@ -129,7 +129,7 @@ function M.setup(opts)
     identifiers = colors.ui.fg.default,
     functions = colors.accent.orange.default,
 
-    keywords = colors.accent.fg.dark,
+    keywords = colors.ui.fg.dark,
     operators = colors.accent.gray.soft,
 
     types = colors.accent.red.default,
