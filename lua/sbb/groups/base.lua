@@ -76,7 +76,7 @@ function M.get(opts, c)
     Visual = { bg = c.ui.visual },
     VisualNOS = "Visual",
 
-    Search = { fg = c.ui.fg.inverse, bg = c.accent.orange.dim },
+    Search = { fg = c.ui.fg.inverse, bg = c.accent.orange.dark },
     IncSearch = { fg = c.ui.fg.inverse, bg = c.accent.orange.default, bold = true },
     CurSearch = "IncSearch",
 
