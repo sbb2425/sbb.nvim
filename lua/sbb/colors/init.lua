@@ -129,7 +129,7 @@ function M.setup(opts)
     identifiers = colors.ui.fg.default,
     functions = colors.accent.orange.default,
 
-    keywords = colors.ui.accent.gray.soft,
+    keywords = colors.accent.gray.soft,
     operators = colors.accent.gray.light,
 
     types = colors.accent.red.default,
