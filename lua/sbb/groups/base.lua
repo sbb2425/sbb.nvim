@@ -88,7 +88,7 @@ function M.get(opts, c)
     String = { fg = c.syntax.strings, style = opts.styles.strings },
     Character = { fg = c.syntax.strings },
     Number = "Constant",
-    -- Boolean = { fg = c.syntax.boolean , style = opts.styles.constants },
+    Boolean = { fg = c.syntax.boolean , style = opts.styles.constants },
     -- Float = "Constant",
     -- Identifier = { fg = c.syntax.identifiers, style = opts.styles.variables },
     Function = { fg = c.syntax.functions, style = opts.styles.functions },
