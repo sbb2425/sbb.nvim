@@ -20,7 +20,7 @@ function M.get(opts, c)
 
     ColorColumn = { bg = c.ui.cursorline },
 
-    LineNr = { fg = c.ui.gray.default },
+    LineNr = { fg = c.accent.gray.default },
     LineNrAbove = "LineNr",
     LineNrBelow = "LineNr",
 
