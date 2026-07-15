@@ -124,10 +124,10 @@ function M.setup(opts)
     comments = colors.accent.gray.default,
 
     constants = colors.accent.yellow.default,
-    booleans = colors.accent.blue,
+    booleans = colors.accent.blue.default,
     strings = colors.accent.cyan.default,
 
-    identifiers = colors.ui.fg.default,
+    identifiers = colors.accent.red.default,
     functions = colors.accent.orange.default,
 
     keywords = colors.accent.gray.soft,
