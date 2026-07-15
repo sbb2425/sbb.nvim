@@ -131,7 +131,7 @@ function M.get(opts, c)
     WarningMsg = { fg = c.accent.orange.soft },
 
     ModeMsg = { fg = c.accent.blue.default, bold = true },
-    MsgArea = { fg = c.ui.gray.default },
+    MsgArea = { fg = c.accent.gray.default },
     MoreMsg = { fg = c.accent.cyan.default },
 
     Question = { fg = c.accent.blue.default },
