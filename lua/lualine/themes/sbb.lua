@@ -50,7 +50,7 @@ M.visual = {
   },
 
   c = {
-    fg = palette.ui.gray.default,
+    fg = palette.accent.gray.default,
     bg = palette.ui.bg.default,
   },
 }
