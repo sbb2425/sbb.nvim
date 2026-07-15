@@ -18,3 +18,5 @@ function M.get(opts, c)
     GitSignsUntracked = { fg = c.accent.gray.dark, bg = c.ui.bg.default },
   }
 end
+
+return M
