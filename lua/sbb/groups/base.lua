@@ -54,11 +54,12 @@ function M.get(opts, c)
     BufferInactive = { fg = c.accent.gray.default, bg = c.ui.bg.default },
     BufferVisible = { fg = c.accent.gray.default, bg = c.ui.bg.default },
     BufferAlternate = { fg = c.accent.gray.default, bg = c.ui.bg.default },
-    -- -- Индексы
-    -- BufferCurrentIndex = { fg = c.accent.gray.default, bg = c.ui.bg.soft },
-    -- BufferInactiveIndex = { fg = c.accent.gray.default, bg = c.ui.bg.default },
-    -- BufferVisibleIndex = { fg = c.accent.gray.default, bg = c.ui.bg.default },
-    -- BufferAlternateIndex = { fg = c.accent.gray.default, bg = c.ui.bg.default },
+    -- Индексы
+    BufferCurrentIndex = { fg = c.accent.gray.default, bg = c.ui.bg.soft },
+    BufferInactiveIndex = { fg = c.accent.gray.default, bg = c.ui.bg.default },
+    BufferVisibleIndex = { fg = c.accent.gray.default, bg = c.ui.bg.default },
+    BufferAlternateIndex = { fg = c.accent.gray.default, bg = c.ui.bg.default },
+    -- -- Кнопки
     -- BufferCurrentBtn = { fg = c.accent.gray.default, bg = c.ui.bg.soft },
     -- BufferInactiveBtn = { fg = c.accent.gray.default, bg = c.ui.bg.default },
     -- BufferVisibleBtn = { fg = c.accent.gray.default, bg = c.ui.bg.default },
