@@ -80,13 +80,13 @@ function M.get(opts, c)
     BufferVisibleADDED = { fg = c.accent.green.dark, bg = c.ui.bg.default },
     BufferVisibleCHANGED = { fg = c.accent.blue.dark, bg = c.ui.bg.default },
     BufferVisibleDELETED = { fg = c.accent.red.dark, bg = c.ui.bg.default },
-    -- -- Разделители
-    -- BufferCurrentSign = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
-    -- BufferInactiveSign = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
-    -- BufferVisibleSign = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
-    -- BufferAlternateSign = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
-    -- BufferCurrentSignRight = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
-    -- BufferInactiveSignRight = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
+    -- Разделители
+    BufferCurrentSign = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
+    BufferInactiveSign = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
+    BufferVisibleSign = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
+    BufferAlternateSign = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
+    BufferCurrentSignRight = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
+    BufferInactiveSignRight = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
 
     Folded = { fg = c.ui.fg.subtle, bg = c.ui.bg.float },
     FoldColumn = { fg = c.ui.fg.subtle, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
