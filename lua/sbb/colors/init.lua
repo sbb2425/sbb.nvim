@@ -146,8 +146,8 @@ function M.setup(opts)
       bg = util.blend(colors.accent.yellow.default, colors.ui.bg.default, 0.10),
     },
     info = {
-      fg = colors.accent.blue.default,
-      bg = util.blend(colors.accent.blue.default, colors.ui.bg.default, 0.10),
+      fg = colors.accent.cyan.default,
+      bg = util.blend(colors.accent.cyan.default, colors.ui.bg.default, 0.10),
     },
     hint = {
       fg = colors.accent.green.default,
