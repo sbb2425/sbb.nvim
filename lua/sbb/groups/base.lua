@@ -16,11 +16,11 @@ function M.get(opts, c)
 
     CursorColumn = { bg = c.ui.cursorline },
     CursorLine = "CursorColumn",
-    CursorLineNr = { fg = c.accent.orange.default, bg = c.ui.cursorline },
+    CursorLineNr = { fg = c.accent.cyan.default, bg = c.ui.cursorline },
 
     ColorColumn = { bg = c.ui.cursorline },
 
-    LineNr = { fg = c.ui.fg.disabled },
+    LineNr = { fg = c.ui.gray.default },
     LineNrAbove = "LineNr",
     LineNrBelow = "LineNr",
 
@@ -49,19 +49,6 @@ function M.get(opts, c)
     TabLine = { fg = c.accent.gray.default, bg = c.ui.bg.default },
     TabLineFill = { fg = c.accent.gray.default, bg = c.ui.bg.default },
     TabLineSel = { fg = c.accent.cyan.default, bg = c.ui.bg.soft },
-    -- GitSign
-    -- для добавленных строк
-    GitSignsAdd = { fg = c.accent.blue.default, bg = c.ui.bg.default },
-    -- для изменённых строк
-    GitSignsChange = { fg = c.accent.blue.default, bg = c.ui.bg.default },
-    -- для удалённых строк
-    GitSignsDelete = { fg = c.accent.red.default, bg = c.ui.bg.default },
-    -- для изменённых и удалённых строк
-    GitSignsChangedelete = { fg = c.accent.cyan.default, bg = c.ui.bg.default },
-    -- для удалённых строк в начале файла
-    GitSignsTopdelete = { fg = c.accent.orange.default, bg = c.ui.bg.default },
-    -- для неотслеживаемых файлов
-    GitSignsUntracked = { fg = c.accent.gray.dark, bg = c.ui.bg.default },
 
     Folded = { fg = c.ui.fg.subtle, bg = c.ui.bg.float },
     FoldColumn = { fg = c.ui.fg.subtle, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
