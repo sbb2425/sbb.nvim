@@ -7,6 +7,7 @@
 ---@field strings vim.api.keyset.highlight
 ---@field types vim.api.keyset.highlight
 ---@field variables vim.api.keyset.highlight
+---@field booleans vim.api.keyset.highlight
 
 ---@class sbb.Highlight: vim.api.keyset.highlight
 ---@field style? vim.api.keyset.highlight

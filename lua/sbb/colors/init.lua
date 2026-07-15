@@ -124,7 +124,7 @@ function M.setup(opts)
     comments = colors.accent.gray.default,
 
     constants = colors.accent.yellow.default,
-    boolean = colors.accent.blue,
+    booleans = colors.accent.blue,
     strings = colors.accent.cyan.default,
 
     identifiers = colors.ui.fg.default,

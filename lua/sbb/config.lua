@@ -16,6 +16,7 @@ M.defaults = {
     strings = {},
     types = { italic = true },
     variables = {},
+    booleans = {},
   },
 }
 
