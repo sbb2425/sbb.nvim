@@ -1,10 +1,12 @@
 ---@class sbb.Styles
 ---@field comments vim.api.keyset.highlight
----@field keywords vim.api.keyset.highlight
+---@field constants vim.api.keyset.highlight
 ---@field functions vim.api.keyset.highlight
----@field variables vim.api.keyset.highlight
+---@field keywords vim.api.keyset.highlight
+---@field operators vim.api.keyset.highlight
 ---@field strings vim.api.keyset.highlight
 ---@field types vim.api.keyset.highlight
+---@field variables vim.api.keyset.highlight
 
 ---@class sbb.Highlight: vim.api.keyset.highlight
 ---@field style? vim.api.keyset.highlight

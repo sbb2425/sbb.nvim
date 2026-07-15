@@ -33,7 +33,7 @@ function M.get(opts, c)
     Whitespace = { fg = c.ui.fg.faint },
     SpecialKey = "Whitespace",
 
-    Title = { fg = c.accent.orange.default, bold = true },
+    Title = { fg = c.accent.cyan.default, bold = true },
 
     Bold = { fg = c.ui.fg.default, bold = true },
     Italic = { fg = c.ui.fg.default, italic = true },
@@ -42,95 +42,85 @@ function M.get(opts, c)
     VertSplit = { fg = c.ui.border.default },
     WinSeparator = "VertSplit",
 
-    StatusLine = { fg = c.ui.fg.default, bg = c.ui.bg.default },
-    StatusLineNC = { fg = c.ui.fg.muted, bg = c.ui.bg.default },
+    StatusLine = { fg = c.accent.gray.default, bg = c.ui.bg.default },
+    StatusLineNC = { fg = c.accent.gray.bright, bg = c.ui.bg.default },
 
     -- Стандартные вкладки
     TabLine = { fg = c.accent.gray.default, bg = c.ui.bg.default },
     TabLineFill = { fg = c.accent.gray.default, bg = c.ui.bg.default },
     TabLineSel = { fg = c.accent.cyan.default, bg = c.ui.bg.soft },
 
-    Folded = { fg = c.ui.fg.subtle, bg = c.ui.bg.float },
+    Folded = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
     FoldColumn = { fg = c.ui.fg.subtle, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
 
     SignColumn = { fg = c.ui.bg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
-    SignColumnSB = { fg = c.ui.fg.default, bg = c.ui.bg.sidebar },
+    SignColumnSB = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
 
-    WinBar = { fg = c.ui.fg.default, bg = c.ui.bg.sidebar },
-    WinBarNC = { fg = c.ui.fg.muted, bg = c.ui.bg.sidebar },
+    WinBar = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
+    WinBarNC = { fg = c.ui.fg.muted, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
 
     -- Floating UI
-    NormalFloat = { fg = c.ui.fg.default, bg = c.ui.bg.float },
+    NormalFloat = { fg = c.ui.fg.default, bg = c.ui.bg.soft },
 
-    FloatBorder = { fg = c.ui.border.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
-    FloatTitle = { fg = c.accent.orange.default, bg = c.ui.bg.float, bold = true },
+    FloatBorder = { fg = c.ui.border.default, bg = c.ui.bg.soft },
+    FloatTitle = { fg = c.accent.orange.default, bg = c.ui.bg.soft, bold = true },
 
-    Pmenu = { fg = c.ui.fg.default, bg = c.ui.bg.float },
-    PmenuSel = { fg = c.ui.fg.default, bg = c.ui.bg.option },
+    Pmenu = { fg = c.ui.fg.default, bg = c.ui.bg.soft },
+    PmenuSel = { fg = c.ui.fg.default, bg = c.ui.bg.soft },
     PmenuMatch = { fg = c.accent.orange.default, bold = true },
     PmenuMatchSel = "PmenuMatch",
-
-    PmenuSbar = { bg = c.ui.bg.float },
-    PmenuThumb = { bg = c.ui.border.subtle },
+    PmenuSbar = { bg = c.ui.bg.soft },
+    PmenuThumb = { bg = c.ui.bg.soft },
 
     -- Visual & Search
     Visual = { bg = c.ui.visual },
     VisualNOS = "Visual",
 
-    Search = { fg = c.ui.fg.inverse, bg = c.accent.orange.dark },
-    IncSearch = { fg = c.ui.fg.inverse, bg = c.accent.orange.default, bold = true },
+    Search = { fg = c.ui.fg.inverse, bg = c.accent.cyan.dark },
+    IncSearch = { fg = c.ui.fg.inverse, bg = c.accent.cyan.dark, bold = true },
     CurSearch = "IncSearch",
 
-    MatchParen = { fg = c.accent.orange.default, bold = true },
+    MatchParen = { fg = c.accent.cyan.dark, bold = true },
 
     -- Syntax
     Comment = { fg = c.syntax.comments, style = opts.styles.comments },
-
-    Constant = { fg = c.syntax.constants },
+    Constant = { fg = c.syntax.constants, style = opts.styles.constants },
     String = { fg = c.syntax.strings, style = opts.styles.strings },
     Character = { fg = c.syntax.strings },
     Number = "Constant",
-    Boolean = "Constant",
+    Boolean = { fg = c.syntax.boolean , style = opts.styles.constants },
     Float = "Constant",
-
     Identifier = { fg = c.syntax.identifiers, style = opts.styles.variables },
     Function = { fg = c.syntax.functions, style = opts.styles.functions },
-
-    Statement = { fg = c.syntax.keywords },
+    Statement = { fg = c.syntax.keywords, style = opts.styles.keywords },
     Conditional = "Statement",
     Repeat = "Statement",
     Label = "Statement",
-    Operator = { fg = c.syntax.operators },
+    Operator = { fg = c.syntax.operators, style = opts.styles.operators },
     Keyword = { fg = c.syntax.keywords, style = opts.styles.keywords },
     Exception = "Statement",
-
-    PreProc = { fg = c.syntax.keywords },
+    PreProc = { fg = c.syntax.keywords, style = opts.styles.keywords  },
     Include = "PreProc",
     Define = "PreProc",
     Macro = "PreProc",
     PreCondit = "PreProc",
-
     Type = { fg = c.syntax.identifiers, style = opts.styles.types },
-    StorangeClass = { fg = c.syntax.keywords },
+    StorangeClass = "Function",
     Structure = "StorangeClass",
-    Typedef = { fg = c.syntax.functions },
-
-    Special = { fg = c.syntax.operators },
+    Typedef = { fg = c.syntax.functions, style = opts.styles.functions },
+    Special = { fg = c.syntax.operators, style = opts.styles.operators },
     SpecialChar = "Special",
     SpecialComment = "Special",
     Tag = "Special",
 
     Delimiter = { fg = c.syntax.operators },
-
     Debug = { fg = c.accent.orange.default },
-
     Underlined = { underline = true },
-
-    Ignore = { fg = c.ui.fg.default },
+    Ignore = { fg = c.accent.gray.default },
 
     -- Error = { fg = c.diagnostics.error.fg, bold = true },
 
-    Todo = { fg = c.ui.fg.default, bold = true },
+    Todo = { fg = c.accent.cyan.default, bold = true },
 
     Added = { fg = c.git.added },
     Changed = { fg = c.git.changed },
@@ -148,8 +138,8 @@ function M.get(opts, c)
     Substitute = { fg = c.ui.fg.inverse, bg = c.accent.orange.soft },
 
     -- Navigation
-    QuickFixLine = { bg = c.ui.visual },
-    WildMenu = { fg = c.ui.fg.default, bg = c.ui.bg.option },
+    QuickFixLine = { bg = c.ui.bg.default },
+    WildMenu = { fg = c.ui.fg.default, bg = c.ui.bg.soft },
 
     -- Spell
     SpellBad = { sp = c.accent.red.default, undercurl = true },
@@ -158,16 +148,16 @@ function M.get(opts, c)
     SpellRare = { sp = c.accent.cyan.default, undercurl = true },
 
     -- Language Services Protocol
-    LspReferenceText = { bg = c.ui.bg.option },
-    LspReferenceRead = { bg = c.ui.bg.option },
-    LspReferenceWrite = { bg = c.ui.bg.option },
+    LspReferenceText = { bg = c.ui.bg.soft },
+    LspReferenceRead = { bg = c.ui.bg.soft },
+    LspReferenceWrite = { bg = c.ui.bg.soft },
 
-    LspSignatureActiveParameter = { bg = c.ui.visual },
+    LspSignatureActiveParameter = { bg = c.ui.bg.soft },
     LspCodeLens = { fg = c.ui.fg.faint },
     LspCodeLensSeparator = { fg = c.ui.fg.faint },
 
     LspInlayHint = { fg = c.accent.cyan.default },
-    LspInfoBorder = { fg = c.ui.fg.default, bg = c.ui.bg.float },
+    LspInfoBorder = { fg = c.ui.fg.default, bg = c.ui.bg.soft },
     ComplHint = { fg = c.accent.blue.default },
 
     -- Diagnostics
@@ -224,9 +214,6 @@ function M.get(opts, c)
     dosIniLabel = { fg = c.accent.orange.default },
     htmlH1 = { fg = c.accent.orange.default },
     htmlH2 = "htmlH1",
-
-    --Yazi
-    YaziFloatBorder = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.default, fg = c.ui.border.default },
 
     --MarkdownRender
     RenderMarkdownH1 = { fg = c.accent.cyan.bright },
