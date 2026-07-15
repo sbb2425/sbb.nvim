@@ -14,17 +14,17 @@ function M.get(opts, c)
     lCursor = "Cursor",
     CursorIM = "Cursor",
 
-    CursorColumn = { bg = c.ui.cursorline },
+    CursorColumn = { bg = c.ui.bg.default },
     CursorLine = "CursorColumn",
-    CursorLineNr = { fg = c.accent.cyan.default, bg = c.ui.cursorline },
+    CursorLineNr = { fg = c.accent.cyan.default, bg = c.ui.bg.default },
 
     ColorColumn = { bg = c.ui.cursorline },
 
-    LineNr = { fg = c.accent.gray.default },
-    LineNrAbove = "LineNr",
-    LineNrBelow = "LineNr",
+    LineNr = { fg = c.accent.gray.default, bg = c.ui.bg.default },
+    LineNrAbove = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
+    LineNrBelow = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
 
-    Directory = { fg = c.accent.orange.default },
+    Directory = { fg = c.accent.cyan.default },
 
     EndOfBuffer = { fg = c.ui.bg.default },
 
