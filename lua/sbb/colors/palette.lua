@@ -33,7 +33,7 @@ palette.dark = {
   gray_dark = "#454545",
   gray = "#5D5D5D",
   gray_soft = "#7D7D7D",
-  gray_light = "#9D9D9D",
+  gray_light = "#9D9D9D", -- bright
 }
 
 return palette

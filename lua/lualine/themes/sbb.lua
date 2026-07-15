@@ -3,18 +3,18 @@ local M = {}
 
 M.normal = {
   a = {
-    fg = palette.ui.fg.inverse,
-    bg = palette.accent.orange.default,
+    fg = palette.accent.gray.bright,
+    bg = palette.ui.bg.light,
     gui = "bold",
   },
 
   b = {
-    fg = palette.accent.orange.default,
-    bg = palette.ui.bg.float,
+    fg = palette.accent.gray.soft,
+    bg = palette.ui.bg.soft,
   },
 
   c = {
-    fg = palette.ui.fg.default,
+    fg = palette.ui.gray.default,
     bg = palette.ui.bg.default,
   },
 }
@@ -22,26 +22,16 @@ M.normal = {
 M.insert = {
   a = {
     fg = palette.ui.bg.default,
-    bg = palette.accent.green.default,
+    bg = palette.accent.cyan.default,
     gui = "bold",
-  },
-
-  b = {
-    fg = palette.accent.green.default,
-    bg = palette.ui.bg.float,
   },
 }
 
 M.visual = {
   a = {
     fg = palette.ui.bg.default,
-    bg = palette.accent.neutral.default,
+    bg = palette.accent.orange.default,
     gui = "bold",
-  },
-
-  b = {
-    fg = palette.accent.neutral.default,
-    bg = palette.ui.bg.float,
   },
 }
 
@@ -51,11 +41,6 @@ M.replace = {
     bg = palette.accent.red.default,
     gui = "bold",
   },
-
-  b = {
-    fg = palette.accent.red.default,
-    bg = palette.ui.bg.float,
-  },
 }
 
 M.command = {
@@ -64,40 +49,30 @@ M.command = {
     bg = palette.accent.blue.default,
     gui = "bold",
   },
-
-  b = {
-    fg = palette.accent.blue.default,
-    bg = palette.ui.bg.float,
-  },
 }
 
 M.terminal = {
   a = {
     fg = palette.ui.fg.default,
-    bg = palette.ui.bg.option,
+    bg = palette.accent.purple.default,
     gui = "bold",
-  },
-
-  b = {
-    fg = palette.ui.fg.default,
-    bg = palette.ui.bg.float,
   },
 }
 
 M.inactive = {
   a = {
-    fg = palette.ui.fg.faint,
-    bg = palette.ui.bg.sidebar,
+    fg = palette.accent.gray.soft,
+    bg = palette.ui.bg.soft,
   },
 
   b = {
-    fg = palette.ui.fg.faint,
-    bg = palette.ui.bg.sidebar,
+    fg = palette.accent.gray.default,
+    bg = palette.ui.bg.default,
   },
 
   c = {
-    fg = palette.ui.fg.muted,
-    bg = palette.ui.bg.sidebar,
+    fg = palette.ui.gray.dark,
+    bg = palette.ui.bg.default,
   },
 }
 
