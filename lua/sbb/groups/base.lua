@@ -28,7 +28,7 @@ function M.get(opts, c)
 
     EndOfBuffer = { fg = c.ui.bg.default },
 
-    NonText = { fg = c.ui.fg.disabled },
+    NonText = { fg = c.accent.gray.dark },
 
     Whitespace = { fg = c.ui.fg.faint },
     SpecialKey = "Whitespace",
@@ -51,7 +51,7 @@ function M.get(opts, c)
     TabLineSel = { fg = c.accent.cyan.default, bg = c.ui.bg.soft },
 
     Folded = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
-    FoldColumn = { fg = c.ui.fg.subtle, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
+    FoldColumn = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
 
     SignColumn = { fg = c.ui.bg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
     SignColumnSB = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
@@ -131,11 +131,11 @@ function M.get(opts, c)
     WarningMsg = { fg = c.accent.orange.soft },
 
     ModeMsg = { fg = c.accent.blue.default, bold = true },
-    MsgArea = { fg = c.ui.fg.muted },
+    MsgArea = { fg = c.ui.gray.default },
     MoreMsg = { fg = c.accent.cyan.default },
 
     Question = { fg = c.accent.blue.default },
-    Substitute = { fg = c.ui.fg.inverse, bg = c.accent.orange.soft },
+    Substitute = { fg = c.ui.fg.inverse, bg = c.accent.orange.dark },
 
     -- Navigation
     QuickFixLine = { bg = c.ui.bg.default },
@@ -143,7 +143,7 @@ function M.get(opts, c)
 
     -- Spell
     SpellBad = { sp = c.accent.red.default, undercurl = true },
-    SpellCap = { sp = c.accent.orange.soft, undercurl = true },
+    SpellCap = { sp = c.accent.orange.default, undercurl = true },
     SpellLocal = { sp = c.accent.blue.default, undercurl = true },
     SpellRare = { sp = c.accent.cyan.default, undercurl = true },
 
@@ -153,8 +153,8 @@ function M.get(opts, c)
     LspReferenceWrite = { bg = c.ui.bg.soft },
 
     LspSignatureActiveParameter = { bg = c.ui.bg.soft },
-    LspCodeLens = { fg = c.ui.fg.faint },
-    LspCodeLensSeparator = { fg = c.ui.fg.faint },
+    LspCodeLens = { fg = c.accent.gray.default },
+    LspCodeLensSeparator = { fg = c.accent.gray.default },
 
     LspInlayHint = { fg = c.accent.cyan.default },
     LspInfoBorder = { fg = c.ui.fg.default, bg = c.ui.bg.soft },
