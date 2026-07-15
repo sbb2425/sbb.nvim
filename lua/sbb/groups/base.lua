@@ -45,9 +45,9 @@ function M.get(opts, c)
     StatusLine = { fg = c.ui.fg.default, bg = c.ui.bg.default },
     StatusLineNC = { fg = c.ui.fg.muted, bg = c.ui.bg.default },
 
-    TabLine = { fg = c.accent.gray.default, bg = c.ui.bg.float },
-    TabLineFill = { fg = c.ui.fg.default, bg = c.ui.bg.float },
-    TabLineSel = { fg = c.accent.gray.bright, bg = c.accent.gray.dim },
+    TabLine = { fg = c.accent.gray.default, bg = c.ui.bg.default },
+    TabLineFill = { fg = c.ui.fg.default, bg = c.ui.bg.default },
+    TabLineSel = { fg = c.accent.cyan.default, bg = c.ui.bg.soft },
 
     Folded = { fg = c.ui.fg.subtle, bg = c.ui.bg.float },
     FoldColumn = { fg = c.ui.fg.subtle, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },

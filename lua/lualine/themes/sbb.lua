@@ -1,7 +1,7 @@
 local palette = require("sbb.colors").setup()
-local sbb = {}
+local M = {}
 
-sbb.normal = {
+M.normal = {
   a = {
     fg = palette.ui.fg.inverse,
     bg = palette.accent.orange.default,
@@ -19,7 +19,7 @@ sbb.normal = {
   },
 }
 
-sbb.insert = {
+M.insert = {
   a = {
     fg = palette.ui.bg.default,
     bg = palette.accent.green.default,
@@ -32,7 +32,7 @@ sbb.insert = {
   },
 }
 
-sbb.visual = {
+M.visual = {
   a = {
     fg = palette.ui.bg.default,
     bg = palette.accent.neutral.default,
@@ -45,7 +45,7 @@ sbb.visual = {
   },
 }
 
-sbb.replace = {
+M.replace = {
   a = {
     fg = palette.ui.bg.default,
     bg = palette.accent.red.default,
@@ -58,7 +58,7 @@ sbb.replace = {
   },
 }
 
-sbb.command = {
+M.command = {
   a = {
     fg = palette.ui.bg.default,
     bg = palette.accent.blue.default,
@@ -71,7 +71,7 @@ sbb.command = {
   },
 }
 
-sbb.terminal = {
+M.terminal = {
   a = {
     fg = palette.ui.fg.default,
     bg = palette.ui.bg.option,
@@ -84,7 +84,7 @@ sbb.terminal = {
   },
 }
 
-sbb.inactive = {
+M.inactive = {
   a = {
     fg = palette.ui.fg.faint,
     bg = palette.ui.bg.sidebar,
@@ -101,4 +101,4 @@ sbb.inactive = {
   },
 }
 
-return sbb
+return M
