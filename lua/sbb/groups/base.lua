@@ -90,7 +90,7 @@ function M.get(opts, c)
     Number = "Constant",
     Boolean = { fg = c.syntax.booleans , style = opts.styles.booleans },
     Float = "Constant",
-    -- Identifier = { fg = c.syntax.identifiers, style = opts.styles.variables },
+    Identifier = { fg = c.syntax.identifiers, style = opts.styles.variables },
     Function = { fg = c.syntax.functions, style = opts.styles.functions },
     Statement = { fg = c.syntax.keywords, style = opts.styles.keywords },
     Conditional = "Statement",

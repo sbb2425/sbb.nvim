@@ -127,7 +127,7 @@ function M.setup(opts)
     booleans = colors.accent.blue.default,
     strings = colors.accent.cyan.default,
 
-    identifiers = colors.accent.red.default,
+    identifiers = colors.ui.fg.default,
     functions = colors.accent.orange.default,
 
     keywords = colors.accent.gray.soft,
