@@ -84,12 +84,25 @@ function M.get(opts, c)
     BufferAlternateCHANGED = { fg = c.accent.blue.dark, bg = c.ui.bg.default },
     BufferAlternateDELETED = { fg = c.accent.red.dark, bg = c.ui.bg.default },
     -- Разделители
-    BufferCurrentSign = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
-    BufferInactiveSign = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
-    BufferVisibleSign = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
-    BufferAlternateSign = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
-    BufferCurrentSignRight = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
-    BufferInactiveSignRight = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
+    BufferCurrentSign = { fg = c.accent.gray.dark, bg = c.ui.bg.default },
+    BufferInactiveSign = { fg = c.accent.gray.dark, bg = c.ui.bg.default },
+    BufferVisibleSign = { fg = c.accent.gray.dark, bg = c.ui.bg.default },
+    BufferAlternateSign = { fg = c.accent.gray.dark, bg = c.ui.bg.default },
+    BufferCurrentSignRight = { fg = c.accent.gray.dark, bg = c.ui.bg.default },
+    BufferInactiveSignRight = { fg = c.accent.gray.dark, bg = c.ui.bg.default },
+    -- GitSign
+    -- для добавленных строк
+    GitSignsAdd = { fg = c.accent.blue.default, bg = c.ui.bg.default },
+    -- для изменённых строк
+    GitSignsChange = { fg = c.accent.blue.default, bg = c.ui.bg.default },
+    -- для удалённых строк
+    GitSignsDelete = { fg = c.accent.red.default, bg = c.ui.bg.default },
+    -- для изменённых и удалённых строк
+    GitSignsChangedelete = { fg = c.accent.cyan.default, bg = c.ui.bg.default },
+    -- для удалённых строк в начале файла
+    GitSignsTopdelete = { fg = c.accent.orange.default, bg = c.ui.bg.default },
+    -- для неотслеживаемых файлов
+    GitSignsUntracked = { fg = c.accent.gray.dark, bg = c.ui.bg.default },
 
     Folded = { fg = c.ui.fg.subtle, bg = c.ui.bg.float },
     FoldColumn = { fg = c.ui.fg.subtle, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
