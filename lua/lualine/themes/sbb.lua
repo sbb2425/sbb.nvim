@@ -14,7 +14,7 @@ M.normal = {
   },
 
   c = {
-    fg = palette.ui.gray.default,
+    fg = palette.accent.gray.default,
     bg = palette.ui.bg.default,
   },
 }
@@ -32,7 +32,7 @@ M.insert = {
   },
 
   c = {
-    fg = palette.ui.gray.default,
+    fg = palette.accent.gray.default,
     bg = palette.ui.bg.default,
   },
 }
@@ -68,7 +68,7 @@ M.replace = {
   },
 
   c = {
-    fg = palette.ui.gray.default,
+    fg = palette.accent.gray.default,
     bg = palette.ui.bg.default,
   },
 }
@@ -86,7 +86,7 @@ M.command = {
   },
 
   c = {
-    fg = palette.ui.gray.default,
+    fg = palette.accent.gray.default,
     bg = palette.ui.bg.default,
   },
 }
@@ -104,7 +104,7 @@ M.terminal = {
   },
 
   c = {
-    fg = palette.ui.gray.default,
+    fg = palette.accent.gray.default,
     bg = palette.ui.bg.default,
   },
 }
@@ -121,7 +121,7 @@ M.inactive = {
   },
 
   c = {
-    fg = palette.ui.gray.dark,
+    fg = palette.accent.gray.dark,
     bg = palette.ui.bg.default,
   },
 }
