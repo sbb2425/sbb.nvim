@@ -49,11 +49,11 @@ function M.get(opts, c)
     TabLine = { fg = c.accent.gray.default, bg = c.ui.bg.default },
     TabLineFill = { fg = c.accent.gray.default, bg = c.ui.bg.default },
     TabLineSel = { fg = c.accent.cyan.default, bg = c.ui.bg.soft },
-    -- -- Barbar вкладки
-    -- BufferCurrent = { fg = c.accent.cyan.default, bg = c.ui.bg.soft },
-    -- BufferInactive = { fg = c.accent.gray.default, bg = c.ui.bg.default },
-    -- BufferVisible = { fg = c.accent.gray.default, bg = c.ui.bg.default },
-    -- BufferAlternate = { fg = c.accent.gray.default, bg = c.ui.bg.default },
+    -- Barbar вкладки
+    BufferCurrent = { fg = c.accent.cyan.default, bg = c.ui.bg.soft },
+    BufferInactive = { fg = c.accent.gray.default, bg = c.ui.bg.default },
+    BufferVisible = { fg = c.accent.gray.default, bg = c.ui.bg.default },
+    BufferAlternate = { fg = c.accent.gray.default, bg = c.ui.bg.default },
     -- -- Индексы
     -- BufferCurrentIndex = { fg = c.accent.gray.default, bg = c.ui.bg.soft },
     -- BufferInactiveIndex = { fg = c.accent.gray.default, bg = c.ui.bg.default },
