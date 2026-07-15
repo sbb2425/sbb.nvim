@@ -80,6 +80,9 @@ function M.get(opts, c)
     BufferVisibleADDED = { fg = c.accent.green.dark, bg = c.ui.bg.default },
     BufferVisibleCHANGED = { fg = c.accent.blue.dark, bg = c.ui.bg.default },
     BufferVisibleDELETED = { fg = c.accent.red.dark, bg = c.ui.bg.default },
+    BufferAlternateADDED = { fg = c.accent.green.dark, bg = c.ui.bg.default },
+    BufferAlternateCHANGED = { fg = c.accent.blue.dark, bg = c.ui.bg.default },
+    BufferAlternateDELETED = { fg = c.accent.red.dark, bg = c.ui.bg.default },
     -- Разделители
     BufferCurrentSign = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
     BufferInactiveSign = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
