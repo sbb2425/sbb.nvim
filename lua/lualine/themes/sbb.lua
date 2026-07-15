@@ -25,6 +25,16 @@ M.insert = {
     bg = palette.accent.cyan.default,
     gui = "bold",
   },
+
+  b = {
+    fg = palette.accent.gray.soft,
+    bg = palette.ui.bg.soft,
+  },
+
+  c = {
+    fg = palette.ui.gray.default,
+    bg = palette.ui.bg.default,
+  },
 }
 
 M.visual = {
@@ -32,6 +42,16 @@ M.visual = {
     fg = palette.ui.bg.default,
     bg = palette.accent.orange.default,
     gui = "bold",
+  },
+
+  b = {
+    fg = palette.accent.gray.soft,
+    bg = palette.ui.bg.soft,
+  },
+
+  c = {
+    fg = palette.ui.gray.default,
+    bg = palette.ui.bg.default,
   },
 }
 
@@ -41,6 +61,16 @@ M.replace = {
     bg = palette.accent.red.default,
     gui = "bold",
   },
+
+  b = {
+    fg = palette.accent.gray.soft,
+    bg = palette.ui.bg.soft,
+  },
+
+  c = {
+    fg = palette.ui.gray.default,
+    bg = palette.ui.bg.default,
+  },
 }
 
 M.command = {
@@ -49,6 +79,16 @@ M.command = {
     bg = palette.accent.blue.default,
     gui = "bold",
   },
+
+  b = {
+    fg = palette.accent.gray.soft,
+    bg = palette.ui.bg.soft,
+  },
+
+  c = {
+    fg = palette.ui.gray.default,
+    bg = palette.ui.bg.default,
+  },
 }
 
 M.terminal = {
@@ -56,6 +96,16 @@ M.terminal = {
     fg = palette.ui.fg.default,
     bg = palette.accent.purple.default,
     gui = "bold",
+  },
+
+  b = {
+    fg = palette.accent.gray.soft,
+    bg = palette.ui.bg.soft,
+  },
+
+  c = {
+    fg = palette.ui.gray.default,
+    bg = palette.ui.bg.default,
   },
 }
 

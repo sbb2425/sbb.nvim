@@ -14,6 +14,17 @@ function M.colorscheme(opts)
     vim.cmd("hi clear")
   end
 
+  -- Настройка lualine с теми же опциями
+  if pcall(require, "lualine") then
+    local lualine_theme = require("lualine.themes.sbb")
+    if type(lualine_theme) == "function" then
+      lualine_theme = lualine_theme(opts)
+    end
+    require("lualine").setup({
+      options = { theme = lualine_theme },
+    })
+  end
+
   vim.o.termguicolors = true
   vim.g.colors_scheme = "sbb"
 
