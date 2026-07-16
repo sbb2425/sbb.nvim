@@ -57,7 +57,7 @@ function M.get(opts, c)
     SignColumnSB = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
 
     WinBar = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
-    WinBarNC = { fg = c.ui.fg.muted, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
+    WinBarNC = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
 
     -- Floating UI
     NormalFloat = { fg = c.ui.fg.default, bg = c.ui.bg.soft },
