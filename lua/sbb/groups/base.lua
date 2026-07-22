@@ -14,9 +14,9 @@ function M.get(opts, c)
     lCursor = "Cursor",
     CursorIM = "Cursor",
 
-    CursorColumn = { bg = c.ui.bg.default },
+    CursorColumn = { bg = c.ui.bg.soft },
     CursorLine = "CursorColumn",
-    CursorLineNr = { fg = c.accent.cyan.default, bg = c.ui.bg.default },
+    CursorLineNr = { fg = c.accent.cyan.default, bg = c.ui.bg.soft },
 
     ColorColumn = { bg = c.ui.cursorline },
 
