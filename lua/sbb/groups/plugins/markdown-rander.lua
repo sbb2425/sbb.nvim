@@ -1,6 +1,6 @@
 local M = {}
 
----@type sbb.Highlights
+---@type sbb.HighlightsFn
 function M.get(opts, c)
   return {
     --MarkdownRender
