@@ -16,3 +16,5 @@ function M.get(opts, c)
     -- WhichKeyIcon	@markup.link	Иконки маппингов
   }
 end
+
+return M
