@@ -6,7 +6,7 @@ function M.get(opts, c)
 
   return {
     WhichKey = { fg = c.accent.cyan.default }, -- Сама клавиша
-    WhichKeySeparator = { fg = c.ui.fg.neutral }, -- Разделитель между клавишей и описанием
+    WhichKeySeparator = { fg = c.accent.gray.dark }, -- Разделитель между клавишей и описанием
     WhichKeyGroup = { fg = c.accent.orange.default }, -- Название группы
     WhichKeyDesc = { fg = c.accent.cyan.dark }, -- Текст описания клавиши
     WhichKeyNormal = { fg = c.ui.fg.dark, bg = bg }, -- Фон/обычный текст окна which-key
