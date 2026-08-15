@@ -44,6 +44,11 @@ function M.get(opts, c)
     RenderMarkdownLink = { fg = c.accent.blue.default }, -- иконка ссылки
     RenderMarkdownLinkTitle = { fg = c.accent.gray.bright }, -- заголовок/подпись ссылки
     RenderMarkdownWikiLink = { fg = c.accent.yellow.default }, -- иконка WikiLink
+-- RenderMarkdownInlineHighlight	содержимое инлайн-хайлайтов (==текст==)
+-- RenderMarkdownSign	фон знаков в sign column
+-- RenderMarkdownMath	строки LaTeX
+-- RenderMarkdownIndent	иконка отступа (org-indent-mode эмуляция)
+-- RenderMarkdownHtmlComment	текст внутри инлайн HTML-комментариев
   }
 end
 
