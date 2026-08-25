@@ -1,0 +1,108 @@
+local M = {}
+
+---@type sbb.HighlightsFn
+function M.get(opts, c)
+  local bg = c.ui.bg.default
+
+  return {
+-- Общие / базовые	TroubleNormal, TroubleNormalNC, TroubleText, TroublePreview	Фон окна, обычный текст, окно превью
+-- Элементы списка	TroubleFilename, TroubleBasename, TroubleDirectory, TroubleSource, TroubleCode, TroublePos, TroubleCount	Отображение имени файла, директории, источника диагностики, позиции (строка/колонка), счётчика элементов
+-- Отступы / индент-guide	TroubleIndent, TroubleIndentTop, TroubleIndentMiddle, TroubleIndentLast, TroubleIndentWs, TroubleIndentFoldOpen, TroubleIndentFoldClosed	Визуальные направляющие линии (дерево) слева от элементов, символы сворачивания/разворачивания
+-- Иконки LSP-типов	TroubleIconClass, TroubleIconFunction, TroubleIconMethod, TroubleIconVariable, TroubleIconEnum, TroubleIconStruct, и т.д.	Цвет иконки перед символом соответствующего LSP kind (класс, функция, метод, переменная...)
+-- По источнику (Fs, Qf, Fzf, Lsp, Snacks, Telescope, Todo, Diagnostics)	TroubleFsPos, TroubleQfFilename, TroubleLspCount, TroubleTelescopeSource, TroubleDiagnosticsMessage, TroubleDiagnosticsCode, TroubleDiagnosticsItemSource	Специфичные для конкретного режима/источника переопределения базовых групп (файл, счётчик, позиция и т.п. отдельно для quickfix, LSP, Telescope, todo-comments, diagnostics...)
+-- Устаревшие (legacy)	LspTroubleText, LspTroubleCount, LspTroubleNormal	Старые имена групп для обратной совместимости (из более раннего названия плагина LspTrouble)
+-- TroublePos|1 col 1| TroublePos
+-- TroubleCode|1 col 1| TroubleCode
+-- TroubleText|1 col 1| TroubleText
+-- TroubleCount|1 col 1| TroubleCount
+-- TroubleFsPos|1 col 1| TroubleFsPos
+-- TroubleQfPos|1 col 1| TroubleQfPos
+-- TroubleFzfPos|1 col 1| TroubleFzfPos
+-- TroubleIndent|1 col 1| TroubleIndent
+-- TroubleLspPos|1 col 1| TroubleLspPos
+-- TroubleNormal|1 col 1| TroubleNormal
+-- TroubleSource|1 col 1| TroubleSource
+-- TroubleFsCount|1 col 1| TroubleFsCount
+-- TroubleIconKey|1 col 1| TroubleIconKey
+-- TroublePreview|1 col 1| TroublePreview
+-- TroubleQfCount|1 col 1| TroubleQfCount
+-- TroubleTodoPos|1 col 1| TroubleTodoPos
+-- TroubleBasename|1 col 1| TroubleBasename
+-- TroubleFilename|1 col 1| TroubleFilename
+-- TroubleFsSource|1 col 1| TroubleFsSource
+-- TroubleFzfCount|1 col 1| TroubleFzfCount
+-- TroubleIconEnum|1 col 1| TroubleIconEnum
+-- TroubleIconFile|1 col 1| TroubleIconFile
+-- TroubleIconNull|1 col 1| TroubleIconNull
+-- TroubleIndentWs|1 col 1| TroubleIndentWs
+-- TroubleLspCount|1 col 1| TroubleLspCount
+-- TroubleNormalNC|1 col 1| TroubleNormalNC
+-- TroubleQfSource|1 col 1| TroubleQfSource
+-- TroubleDirectory|1 col 1| TroubleDirectory
+-- TroubleFzfSource|1 col 1| TroubleFzfSource
+-- TroubleIconArray|1 col 1| TroubleIconArray
+-- TroubleIconClass|1 col 1| TroubleIconClass
+-- TroubleIconEvent|1 col 1| TroubleIconEvent
+-- TroubleIconField|1 col 1| TroubleIconField
+-- TroubleIndentTop|1 col 1| TroubleIndentTop
+-- TroubleLspSource|1 col 1| TroubleLspSource
+-- TroubleSnacksPos|1 col 1| TroubleSnacksPos
+-- TroubleTodoCount|1 col 1| TroubleTodoCount
+-- TroubleFsBasename|1 col 1| TroubleFsBasename
+-- TroubleFsFilename|1 col 1| TroubleFsFilename
+-- TroubleIconMethod|1 col 1| TroubleIconMethod
+-- TroubleIconModule|1 col 1| TroubleIconModule
+-- TroubleIconNumber|1 col 1| TroubleIconNumber
+-- TroubleIconObject|1 col 1| TroubleIconObject
+-- TroubleIconString|1 col 1| TroubleIconString
+-- TroubleIconStruct|1 col 1| TroubleIconStruct
+-- TroubleIndentLast|1 col 1| TroubleIndentLast
+-- TroubleQfBasename|1 col 1| TroubleQfBasename
+-- TroubleQfFilename|1 col 1| TroubleQfFilename
+-- TroubleTodoSource|1 col 1| TroubleTodoSource
+-- TroubleFzfBasename|1 col 1| TroubleFzfBasename
+-- TroubleFzfFilename|1 col 1| TroubleFzfFilename
+-- TroubleIconBoolean|1 col 1| TroubleIconBoolean
+-- TroubleIconPackage|1 col 1| TroubleIconPackage
+-- TroubleLspBasename|1 col 1| TroubleLspBasename
+-- TroubleLspFilename|1 col 1| TroubleLspFilename
+-- TroubleSnacksCount|1 col 1| TroubleSnacksCount
+-- TroubleIconConstant|1 col 1| TroubleIconConstant
+-- TroubleIconFunction|1 col 1| TroubleIconFunction
+-- TroubleIconOperator|1 col 1| TroubleIconOperator
+-- TroubleIconProperty|1 col 1| TroubleIconProperty
+-- TroubleIconVariable|1 col 1| TroubleIconVariable
+-- TroubleIndentMiddle|1 col 1| TroubleIndentMiddle
+-- TroubleSnacksSource|1 col 1| TroubleSnacksSource
+-- TroubleTelescopePos|1 col 1| TroubleTelescopePos
+-- TroubleTodoBasename|1 col 1| TroubleTodoBasename
+-- TroubleTodoFilename|1 col 1| TroubleTodoFilename
+-- TroubleIconDirectory|1 col 1| TroubleIconDirectory
+-- TroubleIconInterface|1 col 1| TroubleIconInterface
+-- TroubleIconNamespace|1 col 1| TroubleIconNamespace
+-- TroubleDiagnosticsPos|1 col 1| TroubleDiagnosticsPos
+-- TroubleIconEnumMember|1 col 1| TroubleIconEnumMember
+-- TroubleIndentFoldOpen|1 col 1| TroubleIndentFoldOpen
+-- TroubleSnacksBasename|1 col 1| TroubleSnacksBasename
+-- TroubleSnacksFilename|1 col 1| TroubleSnacksFilename
+-- TroubleTelescopeCount|1 col 1| TroubleTelescopeCount
+-- TroubleDiagnosticsCode|1 col 1| TroubleDiagnosticsCode
+-- TroubleIconConstructor|1 col 1| TroubleIconConstructor
+-- TroubleTelescopeSource|1 col 1| TroubleTelescopeSource
+-- TroubleDiagnosticsCount|1 col 1| TroubleDiagnosticsCount
+-- TroubleIndentFoldClosed|1 col 1| TroubleIndentFoldClosed
+-- TroubleDiagnosticsSource|1 col 1| TroubleDiagnosticsSource
+-- TroubleIconTypeParameter|1 col 1| TroubleIconTypeParameter
+-- TroubleTelescopeBasename|1 col 1| TroubleTelescopeBasename
+-- TroubleTelescopeFilename|1 col 1| TroubleTelescopeFilename
+-- TroubleDiagnosticsMessage|1 col 1| TroubleDiagnosticsMessage
+-- TroubleDiagnosticsBasename|1 col 1| TroubleDiagnosticsBasename
+-- TroubleDiagnosticsFilename|1 col 1| TroubleDiagnosticsFilename
+-- TroubleDiagnosticsItemSource|1 col 1| TroubleDiagnosticsItemSource
+-- LspTroubleText|1 col 1| LspTroubleText
+-- LspTroubleCount|1 col 1| LspTroubleCount
+-- LspTroubleNormal|1 col 1| LspTroubleNormal
+  }
+end
+
+return M

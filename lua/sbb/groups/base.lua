@@ -4,7 +4,7 @@ local M = {}
 function M.get(opts, c)
   return {
     -- Core UI
-    Normal = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
+    Normal = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.default or c.ui.bg.default },
     NormalNC = "Normal",
     NormalSB = { fg = c.ui.fg.default, bg = c.ui.bg.default },
 
