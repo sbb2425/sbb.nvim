@@ -4,9 +4,9 @@ local M = {}
 function M.get(opts, c)
   return {
     -- Core UI
-    Normal = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.default or c.ui.bg.default },
+    Normal = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
     NormalNC = "Normal",
-    NormalSB = { fg = c.ui.fg.default, bg = c.ui.bg.default },
+    NormalSB = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
 
     Conceal = { fg = c.ui.fg.subtle },
 
@@ -20,13 +20,13 @@ function M.get(opts, c)
 
     ColorColumn = { bg = c.ui.cursorline },
 
-    LineNr = { fg = c.accent.gray.default, bg = c.ui.bg.default },
-    LineNrAbove = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
-    LineNrBelow = { fg = c.accent.gray.soft, bg = c.ui.bg.default },
+    LineNr = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or  c.ui.bg.default },
+    LineNrAbove = { fg = c.accent.gray.soft, bg = opts.transparent and c.ui.bg.none or  c.ui.bg.default },
+    LineNrBelow = { fg = c.accent.gray.soft, bg = opts.transparent and c.ui.bg.none or  c.ui.bg.default },
 
     Directory = { fg = c.accent.cyan.default },
 
-    EndOfBuffer = { fg = c.ui.bg.default },
+    EndOfBuffer = { fg = c.ui.bg.soft },
 
     NonText = { fg = c.accent.gray.dark },
 
@@ -42,18 +42,18 @@ function M.get(opts, c)
     VertSplit = { fg = c.ui.border.default },
     WinSeparator = "VertSplit",
 
-    StatusLine = { fg = c.accent.gray.default, bg = c.ui.bg.default },
-    StatusLineNC = { fg = c.accent.gray.bright, bg = c.ui.bg.default },
+    StatusLine = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
+    StatusLineNC = { fg = c.accent.gray.bright, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
 
     -- Стандартные вкладки
-    TabLine = { fg = c.accent.gray.default, bg = c.ui.bg.default },
-    TabLineFill = { fg = c.accent.gray.default, bg = c.ui.bg.default },
+    TabLine = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
+    TabLineFill = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
     TabLineSel = { fg = c.accent.cyan.default, bg = c.ui.bg.soft },
 
     Folded = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
     FoldColumn = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
 
-    SignColumn = { fg = c.ui.bg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
+    SignColumn = { fg = c.ui.bg.soft, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
     SignColumnSB = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
 
     WinBar = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
@@ -138,7 +138,7 @@ function M.get(opts, c)
     Substitute = { fg = c.ui.fg.inverse, bg = c.accent.orange.dark },
 
     -- Navigation
-    QuickFixLine = { bg = c.ui.bg.default },
+    QuickFixLine = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
     WildMenu = { fg = c.ui.fg.default, bg = c.ui.bg.soft },
 
     -- Spell

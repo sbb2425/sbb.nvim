@@ -3,6 +3,8 @@ local M = {}
 ---@type sbb.HighlightsFn
 function M.get(opts, c)
   return {
+    -- Заполнитель
+    BufferLineFill = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
     -- Barbar вкладки
     BufferCurrent = { fg = c.accent.cyan.default, bg = c.ui.bg.soft },
     BufferInactive = { fg = c.accent.gray.default, bg = c.ui.bg.default },

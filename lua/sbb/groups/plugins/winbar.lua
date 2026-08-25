@@ -7,7 +7,7 @@ function M.get(opts, c)
     -- Для winbar (хлебные крошки)
 
     -- текущий контекст hlgroups.lua:3
-    DropBarCurrentContext = { fg = c.accent.cyan.default, bg = c.ui.bg.default },
+    DropBarCurrentContext = { fg = c.accent.cyan.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
     -- при наведении курсора hlgroups.lua:5
     DropBarHove = { fg = c.accent.cyan.default, bg = c.ui.bg.light },
     -- иконки разных типов символов (функции, классы и т.д.) hlgroups.lua:6-71
