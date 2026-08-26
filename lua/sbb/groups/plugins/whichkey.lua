@@ -2,7 +2,7 @@ local M = {}
 
 ---@type sbb.HighlightsFn
 function M.get(opts, c)
-  local bg = c.ui.bg.soft
+  local bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft
 
   return {
     WhichKey = { fg = c.accent.cyan.default }, -- Сама клавиша

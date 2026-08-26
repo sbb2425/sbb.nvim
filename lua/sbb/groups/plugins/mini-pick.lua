@@ -2,7 +2,7 @@ local M = {}
 
 ---@type sbb.HighlightsFn
 function M.get(opts, c)
-  local bg = c.ui.bg.float
+  local bg = opts.transparent and c.ui.bg.none or c.ui.bg.float
 
   return {
     MiniPickBorder = { fg = c.ui.border.default, bg = bg },

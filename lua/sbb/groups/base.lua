@@ -60,17 +60,17 @@ function M.get(opts, c)
     WinBarNC = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
 
     -- Floating UI
-    NormalFloat = { fg = c.ui.fg.default, bg = c.ui.bg.soft },
+    NormalFloat = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
 
-    FloatBorder = { fg = c.ui.border.default, bg = c.ui.bg.soft },
-    FloatTitle = { fg = c.accent.orange.default, bg = c.ui.bg.soft, bold = true },
+    FloatBorder = { fg = c.ui.border.default, bg = opts.transparent and c.ui.none or c.ui.bg.soft },
+    FloatTitle = { fg = c.accent.orange.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft, bold = true },
 
-    Pmenu = { fg = c.ui.fg.default, bg = c.ui.bg.soft },
-    PmenuSel = { fg = c.ui.fg.default, bg = c.ui.bg.soft },
+    Pmenu = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
+    PmenuSel = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
     PmenuMatch = { fg = c.accent.orange.default, bold = true },
     PmenuMatchSel = "PmenuMatch",
-    PmenuSbar = { bg = c.ui.bg.soft },
-    PmenuThumb = { bg = c.ui.bg.soft },
+    PmenuSbar = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
+    PmenuThumb = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
 
     -- Visual & Search
     Visual = { bg = c.ui.visual },
@@ -139,7 +139,7 @@ function M.get(opts, c)
 
     -- Navigation
     QuickFixLine = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
-    WildMenu = { fg = c.ui.fg.default, bg = c.ui.bg.soft },
+    WildMenu = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
 
     -- Spell
     SpellBad = { sp = c.accent.red.default, undercurl = true },
@@ -148,16 +148,16 @@ function M.get(opts, c)
     SpellRare = { sp = c.accent.cyan.default, undercurl = true },
 
     -- Language Services Protocol
-    LspReferenceText = { bg = c.ui.bg.soft },
-    LspReferenceRead = { bg = c.ui.bg.soft },
-    LspReferenceWrite = { bg = c.ui.bg.soft },
+    LspReferenceText = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
+    LspReferenceRead = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
+    LspReferenceWrite = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
 
-    LspSignatureActiveParameter = { bg = c.ui.bg.soft },
+    LspSignatureActiveParameter = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
     LspCodeLens = { fg = c.accent.gray.default },
     LspCodeLensSeparator = { fg = c.accent.gray.default },
 
     LspInlayHint = { fg = c.accent.cyan.default },
-    LspInfoBorder = { fg = c.ui.fg.default, bg = c.ui.bg.soft },
+    LspInfoBorder = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
     ComplHint = { fg = c.accent.blue.default },
 
     -- Diagnostics

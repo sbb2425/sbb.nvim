@@ -5,10 +5,10 @@ function M.get(opts, c)
   return {
 
     -- окно меню
-    BlinkCmpMenu = { fg = c.accent.gray.default, bg = c.ui.bg.soft },
+    BlinkCmpMenu = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
 
     -- граница меню
-    BlinkCmpMenuBorder = { fg = c.accent.cyan.default, bg = c.ui.bg.soft },
+    BlinkCmpMenuBorder = { fg = c.accent.cyan.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
 
     -- выбранный элемент
     BlinkCmpMenuSelection = { fg = c.ui.fg.default, bg = c.ui.bg.light },
