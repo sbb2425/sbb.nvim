@@ -84,7 +84,7 @@ function M.get(opts, c)
     },
     -- фон инлайн-кода
     RenderMarkdownCodeInline = {
-      fg = c.accent.cyan.dark,
+      fg = c.accent.cyan.default,
       bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
     },
     -- невыполненный чекбокс
