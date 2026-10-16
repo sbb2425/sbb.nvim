@@ -8,7 +8,7 @@ function M.get(opts, c)
     WhichKey = { fg = c.accent.cyan.default }, -- Сама клавиша
     WhichKeySeparator = { fg = c.accent.gray.dark }, -- Разделитель между клавишей и описанием
     WhichKeyGroup = { fg = c.accent.orange.default }, -- Название группы
-    WhichKeyDesc = { fg = c.accent.cyan.dark }, -- Текст описания клавиши
+    WhichKeyDesc = { fg = c.accent.cyan.default }, -- Текст описания клавиши
     WhichKeyNormal = { fg = c.ui.fg.dark, bg = bg }, -- Фон/обычный текст окна which-key
     WhichKeyTitle = { fg = c.ui.fg.dark, bg = bg }, -- Заголовок окна
     WhichKeyBorder = { fg = c.accent.cyan.default, bg = bg }, -- Рамка окна
