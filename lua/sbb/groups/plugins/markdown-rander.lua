@@ -69,17 +69,17 @@ function M.get(opts, c)
     RenderMarkdownCode = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.light },
     -- секция инфо после языка в code fence
     RenderMarkdownCodeInfo = {
-      fg = c.accent.cyan.dark,
+      fg = c.accent.cyan.default,
       bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
     },
     -- фон границы блока кода
     RenderMarkdownCodeBorder = {
-      fg = c.accent.cyan.dark,
+      fg = c.accent.cyan.default,
       bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
     },
     -- фолбэк-цвет языка, если у провайдера иконок нет значения
     RenderMarkdownCodeFallback = {
-      fg = c.accent.cyan.dark,
+      fg = c.accent.cyan.default,
       bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
     },
     -- фон инлайн-кода
@@ -96,19 +96,19 @@ function M.get(opts, c)
     -- горизонтальная линия (thematic break)
     RenderMarkdownDash = { fg = c.accent.neutral.default },
     -- маркер элемента списка
-    RenderMarkdownBullet = { fg = c.accent.cyan.dark },
+    RenderMarkdownBullet = { fg = c.accent.cyan.default },
     -- маркер цитаты уровня 1
-    RenderMarkdownQuote1 = { fg = c.accent.cyan.dark },
+    RenderMarkdownQuote1 = { fg = c.accent.cyan.default },
     -- маркер цитаты уровня 2
-    RenderMarkdownQuote2 = { fg = c.accent.green.dark },
+    RenderMarkdownQuote2 = { fg = c.accent.green.default },
     -- маркер цитаты уровня 3
-    RenderMarkdownQuote3 = { fg = c.accent.blue.dark },
+    RenderMarkdownQuote3 = { fg = c.accent.blue.default },
     -- маркер цитаты уровня 4
-    RenderMarkdownQuote4 = { fg = c.accent.purple.dark },
+    RenderMarkdownQuote4 = { fg = c.accent.purple.default },
     -- маркер цитаты уровня 5
-    RenderMarkdownQuote5 = { fg = c.accent.orange.dark },
+    RenderMarkdownQuote5 = { fg = c.accent.orange.default },
     -- маркер цитаты уровня 6
-    RenderMarkdownQuote6 = { fg = c.accent.yellow.dark },
+    RenderMarkdownQuote6 = { fg = c.accent.yellow.default },
     -- строки заголовка таблицы (pipe table)
     RenderMarkdownTableHead = {
       fg = c.accent.blue.default,
