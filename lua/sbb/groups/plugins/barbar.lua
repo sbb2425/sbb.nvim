@@ -20,7 +20,7 @@ function M.get(opts, c)
     BufferInactiveBtn = { fg = c.accent.neutral.default, bg = c.ui.bg.default },
     BufferVisibleBtn = { fg = c.accent.neutral.default, bg = c.ui.bg.default },
     BufferAlternateBtn = { fg = c.accent.neutral.default, bg = c.ui.bg.default },
-    BufferCurrentModBtn = { fg = c.accent.purple.default, bg = c.ui.bg.soft },
+    BufferCurrentModBtn = { fg = c.accent.orange.default, bg = c.ui.bg.soft },
     BufferInactiveModBtn = { fg = c.accent.orange.dark, bg = c.ui.bg.default },
     BufferCurrentMod = { fg = c.accent.orange.default, bg = c.ui.bg.soft },
     BufferInactiveMod = { fg = c.accent.orange.dark, bg = c.ui.bg.default },
