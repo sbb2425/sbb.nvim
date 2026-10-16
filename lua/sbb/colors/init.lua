@@ -89,23 +89,25 @@ function M.setup(opts)
   colors.ui = {
     bg = {
       default = v.bg,
+      dark = v.bg_dark,
+      light = v.bg_light,
+      soft = v.bg_soft,
       sidebar = v.bg_soft,
       float = v.bg_soft,
       option = v.bg_soft,
-      -- inverse = util.invert(v.fg),
       inverse = v.fg,
-      soft = v.bg_soft,
-      light = v.bg_light,
       none = "NONE",
     },
 
     fg = {
       default = v.fg,
+      dark = v.fg_dark,
+      light = v.fg_light,
+      soft = v.fg_soft,
       muted = util.blend(v.fg, v.bg, 0.68),
       subtle = util.blend(v.fg, v.bg, 0.52),
       faint = util.blend(v.fg, v.bg, 0.48),
       disabled = v.neutral,
-      dark = v.fg_dark,
       neutral = v.neutral,
       -- inverse = util.invert(v.bg),
       inverse = v.bg,
@@ -124,7 +126,7 @@ function M.setup(opts)
   }
 
   colors.syntax = {
-    comments = colors.accent.gray.default,
+    comments = colors.accent.neutral.dark_soft,
 
     constants = colors.accent.yellow.default,
     booleans = colors.accent.blue.default,
@@ -133,29 +135,29 @@ function M.setup(opts)
     identifiers = colors.ui.fg.default,
     functions = colors.accent.orange.default,
 
-    keywords = colors.accent.gray.soft,
-    operators = colors.accent.gray.light,
+    keywords = colors.accent.neutral.default,
+    operators = colors.accent.neutral.light_soft,
 
     types = colors.accent.red.default,
-    members = colors.accent.neutral.default,
-    links = colors.accent.blue.default,
+    members = colors.accent.neutral.light,
+    links = colors.accent.blue.bright,
   }
   colors.diag = {
     error = {
       fg = colors.accent.red.default,
-      bg = util.blend(colors.accent.red.default, colors.ui.bg.default, 0.10),
+      bg = colors.ui.bg.default,
     },
     warn = {
       fg = colors.accent.yellow.default,
-      bg = util.blend(colors.accent.yellow.default, colors.ui.bg.default, 0.10),
+      bg = colors.ui.bg.default,
     },
     info = {
       fg = colors.accent.cyan.default,
-      bg = util.blend(colors.accent.cyan.default, colors.ui.bg.default, 0.10),
+      bg = colors.ui.bg.default,
     },
     hint = {
       fg = colors.accent.green.default,
-      bg = util.blend(colors.accent.green.default, colors.ui.bg.default, 0.10),
+      bg = colors.ui.bg.default,
     },
   }
   colors.git = {
@@ -166,19 +168,19 @@ function M.setup(opts)
   colors.diff = {
     add = {
       fg = colors.accent.green.default,
-      bg = util.blend(colors.accent.green.default, colors.ui.bg.default, 0.10),
+      bg = colors.ui.bg.default,
     },
     change = {
       fg = colors.accent.blue.default,
-      bg = util.blend(colors.accent.blue.default, colors.ui.bg.default, 0.10),
+      bg = colors.ui.bg.default,
     },
     delete = {
       fg = colors.accent.red.default,
-      bg = util.blend(colors.accent.red.default, colors.ui.bg.default, 0.10),
+      bg = colors.ui.bg.default,
     },
     text = {
       fg = colors.ui.fg.default,
-      bg = util.blend(colors.ui.fg.default, colors.ui.bg.default, 0.16),
+      bg = colors.ui.bg.default,
     },
   }
 
