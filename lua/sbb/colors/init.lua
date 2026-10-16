@@ -26,7 +26,7 @@ function M.setup(opts)
       dim = util.blend(v.green, v.bg, 0.25),
       dark = v.green_dark,
       bright = v.green_light,
-      light = v.green_l
+      light = v.green_light,
     },
 
     blue = {
