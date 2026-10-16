@@ -4,33 +4,54 @@ local M = {}
 function M.get(opts, c)
   return {
     -- Core UI
-    Normal = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
+    Normal = {
+      fg = c.ui.fg.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
     NormalNC = "Normal",
-    NormalSB = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
+    NormalSB = {
+      fg = c.ui.fg.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
 
     Conceal = { fg = c.ui.fg.subtle },
 
-    Cursor = { fg = c.ui.fg.inverse, bg = c.accent.cyan.default },
+    Cursor = {
+      fg = c.ui.fg.inverse,
+      bg = c.accent.cyan.default,
+    },
     lCursor = "Cursor",
     CursorIM = "Cursor",
 
-    CursorColumn = { bg = c.ui.bg.soft },
+    CursorColumn = { bg = c.ui.bg.light },
     CursorLine = "CursorColumn",
-    CursorLineNr = { fg = c.accent.cyan.default, bg = c.ui.bg.soft },
+    CursorLineNr = {
+      fg = c.accent.cyan.default,
+      bg = c.ui.bg.light,
+    },
 
     ColorColumn = { bg = c.ui.cursorline },
 
-    LineNr = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or  c.ui.bg.default },
-    LineNrAbove = { fg = c.accent.gray.soft, bg = opts.transparent and c.ui.bg.none or  c.ui.bg.default },
-    LineNrBelow = { fg = c.accent.gray.soft, bg = opts.transparent and c.ui.bg.none or  c.ui.bg.default },
+    LineNr = {
+      fg = c.accent.neutral.dark,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
+    LineNrAbove = {
+      fg = c.accent.neutral.dark,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
+    LineNrBelow = {
+      fg = c.accent.neutral.dark,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
 
     Directory = { fg = c.accent.cyan.default },
 
-    EndOfBuffer = { fg = c.ui.bg.soft },
+    EndOfBuffer = { fg = c.ui.bg.default },
 
-    NonText = { fg = c.accent.gray.dark },
+    NonText = { fg = c.accent.neutral.dark },
 
-    Whitespace = { fg = c.ui.fg.faint },
+    Whitespace = { fg = c.ui.fg.soft },
     SpecialKey = "Whitespace",
 
     Title = { fg = c.accent.cyan.default, bold = true },
@@ -42,35 +63,83 @@ function M.get(opts, c)
     VertSplit = { fg = c.ui.border.default },
     WinSeparator = "VertSplit",
 
-    StatusLine = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
-    StatusLineNC = { fg = c.accent.gray.bright, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
+    StatusLine = {
+      fg = c.accent.neutral.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
+    StatusLineNC = {
+      fg = c.accent.neutral.dark,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
 
     -- Стандартные вкладки
-    TabLine = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
-    TabLineFill = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
-    TabLineSel = { fg = c.accent.cyan.default, bg = c.ui.bg.soft },
+    TabLine = {
+      fg = c.accent.neutral.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
+    TabLineFill = {
+      fg = c.accent.neutral.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
+    TabLineSel = {
+      fg = c.accent.cyan.default,
+      bg = c.ui.bg.soft,
+    },
 
-    Folded = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
-    FoldColumn = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
+    Folded = {
+      fg = c.accent.neutral.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
+    FoldColumn = {
+      fg = c.accent.neutral.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
 
-    SignColumn = { fg = c.ui.bg.soft, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
-    SignColumnSB = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
+    SignColumn = {
+      fg = c.accent.neutral.dark,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
+    SignColumnSB = {
+      fg = c.accent.neutral.dark,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
 
-    WinBar = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
-    WinBarNC = { fg = c.accent.gray.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
+    WinBar = {
+      fg = c.accent.neutral.light,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
+    WinBarNC = {
+      fg = c.accent.neutral.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
 
     -- Floating UI
-    NormalFloat = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
+    NormalFloat = {
+      fg = c.ui.fg.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.light,
+    },
+    FloatBorder = {
+      fg = c.ui.border.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.light,
+    },
+    FloatTitle = {
+      fg = c.accent.cyan.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.light,
+      bold = true,
+    },
 
-    FloatBorder = { fg = c.ui.border.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
-    FloatTitle = { fg = c.accent.orange.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft, bold = true },
-
-    Pmenu = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
-    PmenuSel = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
+    Pmenu = {
+      fg = c.ui.fg.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.light,
+    },
+    PmenuSel = {
+      fg = c.ui.fg.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.light,
+    },
     PmenuMatch = { fg = c.accent.orange.default, bold = true },
     PmenuMatchSel = "PmenuMatch",
-    PmenuSbar = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
-    PmenuThumb = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
+    PmenuSbar = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.light },
+    PmenuThumb = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.light },
 
     -- Visual & Search
     Visual = { bg = c.ui.visual },
@@ -88,7 +157,7 @@ function M.get(opts, c)
     String = { fg = c.syntax.strings, style = opts.styles.strings },
     Character = { fg = c.syntax.strings },
     Number = "Constant",
-    Boolean = { fg = c.syntax.booleans , style = opts.styles.booleans },
+    Boolean = { fg = c.syntax.booleans, style = opts.styles.booleans },
     Float = "Constant",
     Identifier = { fg = c.syntax.identifiers, style = opts.styles.variables },
     Function = { fg = c.syntax.functions, style = opts.styles.functions },
@@ -99,7 +168,7 @@ function M.get(opts, c)
     Operator = { fg = c.syntax.operators, style = opts.styles.operators },
     Keyword = { fg = c.syntax.keywords, style = opts.styles.keywords },
     Exception = "Statement",
-    PreProc = { fg = c.syntax.keywords, style = opts.styles.keywords  },
+    PreProc = { fg = c.syntax.keywords, style = opts.styles.keywords },
     Include = "PreProc",
     Define = "PreProc",
     Macro = "PreProc",
@@ -116,7 +185,7 @@ function M.get(opts, c)
     Delimiter = { fg = c.syntax.operators },
     Debug = { fg = c.accent.orange.default },
     Underlined = { underline = true },
-    Ignore = { fg = c.accent.gray.default },
+    Ignore = { fg = c.accent.neutral.default },
 
     -- Error = { fg = c.diagnostics.error.fg, bold = true },
 
@@ -128,10 +197,10 @@ function M.get(opts, c)
 
     -- Messages
     ErrorMsg = { fg = c.accent.red.default },
-    WarningMsg = { fg = c.accent.orange.soft },
+    WarningMsg = { fg = c.accent.orange.default },
 
     ModeMsg = { fg = c.accent.blue.default, bold = true },
-    MsgArea = { fg = c.accent.gray.default },
+    MsgArea = { fg = c.accent.neutral.default },
     MoreMsg = { fg = c.accent.cyan.default },
 
     Question = { fg = c.accent.blue.default },
@@ -139,7 +208,10 @@ function M.get(opts, c)
 
     -- Navigation
     QuickFixLine = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.default },
-    WildMenu = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
+    WildMenu = {
+      fg = c.ui.fg.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.default,
+    },
 
     -- Spell
     SpellBad = { sp = c.accent.red.default, undercurl = true },
@@ -148,16 +220,19 @@ function M.get(opts, c)
     SpellRare = { sp = c.accent.cyan.default, undercurl = true },
 
     -- Language Services Protocol
-    LspReferenceText = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
-    LspReferenceRead = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
-    LspReferenceWrite = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
+    LspReferenceText = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.light },
+    LspReferenceRead = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.light },
+    LspReferenceWrite = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.light },
 
-    LspSignatureActiveParameter = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
-    LspCodeLens = { fg = c.accent.gray.default },
-    LspCodeLensSeparator = { fg = c.accent.gray.default },
+    LspSignatureActiveParameter = { bg = opts.transparent and c.ui.bg.none or c.ui.bg.light },
+    LspCodeLens = { fg = c.accent.neutral.default },
+    LspCodeLensSeparator = { fg = c.accent.neutral.dark_soft },
 
     LspInlayHint = { fg = c.accent.cyan.default },
-    LspInfoBorder = { fg = c.ui.fg.default, bg = opts.transparent and c.ui.bg.none or c.ui.bg.soft },
+    LspInfoBorder = {
+      fg = c.ui.fg.default,
+      bg = opts.transparent and c.ui.bg.none or c.ui.bg.light,
+    },
     ComplHint = { fg = c.accent.blue.default },
 
     -- Diagnostics
@@ -214,7 +289,6 @@ function M.get(opts, c)
     dosIniLabel = { fg = c.accent.orange.default },
     htmlH1 = { fg = c.accent.orange.default },
     htmlH2 = "htmlH1",
-
   }
 end
 

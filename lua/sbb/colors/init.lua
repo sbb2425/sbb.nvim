@@ -121,8 +121,8 @@ function M.setup(opts)
     },
 
     -- cursorline = util.lighten(v.bg, 0.04),
-    cursorline = v.bg_soft,
-    visual = v.bg_light,
+    cursorline = v.bg_light,
+    visual = v.bg_soft,
   }
 
   colors.syntax = {
