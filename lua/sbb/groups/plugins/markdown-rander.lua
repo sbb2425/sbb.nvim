@@ -94,7 +94,7 @@ function M.get(opts, c)
     -- кастомный чекбокс "todo"
     RenderMarkdownTodo = { fg = c.accent.blue.default },
     -- горизонтальная линия (thematic break)
-    RenderMarkdownDash = { fg = c.accent.gray.default },
+    RenderMarkdownDash = { fg = c.accent.neutral.default },
     -- маркер элемента списка
     RenderMarkdownBullet = { fg = c.accent.cyan.dark },
     -- маркер цитаты уровня 1
@@ -152,7 +152,7 @@ function M.get(opts, c)
     -- иконка ссылки
     RenderMarkdownLink = { fg = c.accent.blue.default },
     -- заголовок/подпись ссылки
-    RenderMarkdownLinkTitle = { fg = c.accent.gray.dark },
+    RenderMarkdownLinkTitle = { fg = c.accent.neutral.dark },
     -- иконка WikiLink
     RenderMarkdownWikiLink = { fg = c.accent.yellow.default },
     -- RenderMarkdownInlineHighlight	содержимое инлайн-хайлайтов (==текст==)

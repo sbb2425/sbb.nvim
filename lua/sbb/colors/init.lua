@@ -17,6 +17,7 @@ function M.setup(opts)
       dim = util.blend(v.orange, v.bg, 0.25),
       dark = v.orange_dark,
       bright = v.orange_light,
+      light = v.orange_light,
     },
 
     green = {
@@ -25,6 +26,7 @@ function M.setup(opts)
       dim = util.blend(v.green, v.bg, 0.25),
       dark = v.green_dark,
       bright = v.green_light,
+      light = v.green_l
     },
 
     blue = {
@@ -33,6 +35,7 @@ function M.setup(opts)
       dim = util.blend(v.blue, v.bg, 0.25),
       dark = v.blue_dark,
       bright = v.blue_light,
+      light = v.blue_light,
     },
 
     red = {
@@ -41,6 +44,7 @@ function M.setup(opts)
       dim = util.blend(v.red, v.bg, 0.25),
       dark = v.red_dark,
       bright = v.red_light,
+      light = v.red_light,
     },
 
     yellow = {
@@ -49,6 +53,7 @@ function M.setup(opts)
       dim = util.blend(v.yellow, v.bg, 0.25),
       dark = v.yellow_dark,
       bright = v.yellow_light,
+      light = v.yellow_light,
     },
 
     purple = {
@@ -57,6 +62,7 @@ function M.setup(opts)
       dim = util.blend(v.purple, v.bg, 0.25),
       dark = v.purple_dark,
       bright = v.purple_light,
+      light = v.purple_light,
     },
 
     cyan = {
@@ -65,6 +71,7 @@ function M.setup(opts)
       dim = util.blend(v.cyan, v.bg, 0.25),
       dark = v.cyan_dark,
       bright = v.cyan_light,
+      light = v.cyan_light,
     },
 
     neutral = {
