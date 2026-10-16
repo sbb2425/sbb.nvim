@@ -114,6 +114,7 @@ function M.get(opts, c)
       fg = c.accent.blue.default,
       bg = opts.transparent and c.ui.bg.none or c.ui.bg.light,
     },
+
     -- остальные строки таблицы
     RenderMarkdownTableRow = {
       fg = c.ui.fg.dark,
