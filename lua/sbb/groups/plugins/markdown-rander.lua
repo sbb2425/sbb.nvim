@@ -121,31 +121,31 @@ function M.get(opts, c)
     },
     -- callout'ы категории "success" (Tip, Success, Done, Check, Hint...)
     RenderMarkdownSuccess = {
-      fg = c.accent.green.dark,
+      fg = c.accent.green.default,
       bg = opts.transparent and c.ui.bg.none or c.ui.bg.light,
     },
     -- callout'ы категории "hint" (Important, Example)
     RenderMarkdownHint = {
-      fg = c.accent.cyan.dark,
+      fg = c.accent.cyan.default,
       bg = opts.transparent and c.ui.bg.none or c.ui.bg.light,
     },
     RenderMarkdownWarn = {
-      fg = c.accent.orange.dark,
+      fg = c.accent.orange.default,
       bg = opts.transparent and c.ui.bg.none or c.ui.bg.light,
     },
     -- callout'ы категории "warning" (Warning, Question, Help, Faq, Attention)
     RenderMarkdownInfo = {
-      fg = c.accent.purple.dark,
+      fg = c.accent.purple.default,
       bg = opts.transparent and c.ui.bg.none or c.ui.bg.light,
     },
     -- callout'ы категории "info" (Note, Abstract, Summary, Tldr, Info, Todo)
     RenderMarkdownError = {
-      fg = c.accent.red.dark,
+      fg = c.accent.red.default,
       bg = opts.transparent and c.ui.bg.none or c.ui.bg.light,
     },
     -- callout'ы категории "error" (Caution, Failure, Missing, Danger, Error, Bug)
     RenderMarkdownQuote = {
-      fg = c.accent.purple.dark,
+      fg = c.accent.purple.default,
       bg = opts.transparent and c.ui.bg.none or c.ui.bg.light,
     },
     -- дефолт для блочных цитат / Quote и Cite callout'ов
